@@ -1,10 +1,17 @@
 # vElevators
 
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-Commercial%20Source--Available-orange.svg)](LICENSE.md)
 
 Paid, configurable elevator floors for Paper, with vertical travel, shared networks, access controls and editable DeluxeMenus interfaces.
 
 **Current version: 1.1.0** · **Author: Vicevil** · **Artifact: `vElevators-Paper-1.1.0.jar`**
+
+vElevators is a paid plugin with publicly inspectable source. Under the
+[commercial source-available license](LICENSE.md), running the plugin requires
+an authorized purchase, including when using a self-compiled or modified JAR.
+Purchasers may make private modifications for authorized use; redistribution
+requires permission except for the limited contribution/fork permissions in the
+license and rights preserved from earlier or third-party licenses.
 
 ## Features
 
@@ -48,7 +55,7 @@ SQLite JDBC is bundled in the plugin JAR. SkinsRestorer and the ParseOther expan
 ## Installation
 
 1. Install the dependencies and configure your economy provider.
-2. Obtain `vElevators-Paper-1.1.0.jar` through the author's authorized distribution channel.
+2. Purchase a vElevators license and obtain `vElevators-Paper-1.1.0.jar` through the author's authorized distribution channel, subject to the exceptions in the license.
 3. Stop the server, put the JAR in `plugins/` and start the server.
 4. Check the startup log for the vElevators enable message and DeluxeMenus reload result.
 5. Grant the appropriate permissions. All permissions declared by vElevators default to `false`.
@@ -265,4 +272,20 @@ Report issues at [vicevilz/vElevators/issues](https://github.com/vicevilz/vEleva
 
 ## License
 
-[MIT License](LICENSE.md) · Copyright (c) 2026 Vicevil.
+[vElevators Commercial Source-Available License](LICENSE.md), version 1.0,
+19 October 2026. Copyright (c) 2026 Vicevil.
+
+The license requires a purchase for server use, allows private modifications by
+purchasers and limits redistribution. Public source access and the limited
+permission to submit a contribution do not provide a general free-use license.
+These are licensing conditions, not technical copy protection.
+
+**Earlier MIT permissions remain:** the original public revisions were released
+under MIT. This change does not revoke those grants or make the same previously
+licensed material exclusive. The original notice is preserved in
+[licenses/LEGACY-MIT.txt](licenses/LEGACY-MIT.txt). Existing copies and material
+covered by an earlier grant may continue to be used under its terms.
+
+Third-party rights and obligations are preserved; see
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Compatibility of commercial
+distribution with GPL-covered runtime integrations has not been legally verified.
