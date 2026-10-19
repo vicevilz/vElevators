@@ -1,0 +1,71 @@
+menu_title: '   &#151A16✦ &#C9A24A&lTRANSFERIR AGORA &#151A16✦'
+size: 27
+open_commands:
+  - '[sound] BLOCK_BEACON_ACTIVATE'
+
+items:
+  lime_background:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 9-12
+      - 18-21
+    priority: 100
+    hide-tooltip: true
+
+  center_background:
+    material: WHITE_STAINED_GLASS_PANE
+    slots:
+      - 4
+      - 13
+      - 22
+    priority: 100
+    hide-tooltip: true
+
+  red_background:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 5-8
+      - 14-17
+      - 23-26
+    priority: 100
+    hide-tooltip: true
+
+  confirm:
+    material: 'texture-a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756'
+    slot: 11
+    priority: 1
+    display_name: '&#68D878Confirmar transferência'
+    lore:
+      - '&8ⓘ Mudança de propriedade'
+      - ''
+      - ' &#F1E7CCVocê se tornará um membro.'
+      - ''
+      - ' &#68D878➜ Clique para confirmar'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[player] velevatorsaction confirmtransfer'
+
+  target:
+    material: 'texture-%velevators_selected_member_texture%'
+    slot: 13
+    priority: 1
+    enchantment_glint_override: true
+    display_name: '&#C9A24A%velevators_selected_member_name%'
+    lore:
+      - '&8ⓘ Novo proprietário'
+      - ''
+      - ' &#F1E7CCRede: &#45D6C5%velevators_network_name%'
+
+  cancel:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 15
+    priority: 1
+    display_name: '&#C93A3FCancelar'
+    lore:
+      - '&8ⓘ Manter proprietário'
+      - ''
+      - ' &#C93A3F➜ Clique para retornar'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction canceltransfer'

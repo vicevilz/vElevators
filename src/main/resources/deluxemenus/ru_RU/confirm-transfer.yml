@@ -1,0 +1,71 @@
+menu_title: '   &#151A16✦ &#C9A24A&lПЕРЕДАТЬ СЕЙЧАС &#151A16✦'
+size: 27
+open_commands:
+  - '[sound] BLOCK_BEACON_ACTIVATE'
+
+items:
+  lime_background:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 9-12
+      - 18-21
+    priority: 100
+    hide-tooltip: true
+
+  center_background:
+    material: WHITE_STAINED_GLASS_PANE
+    slots:
+      - 4
+      - 13
+      - 22
+    priority: 100
+    hide-tooltip: true
+
+  red_background:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 5-8
+      - 14-17
+      - 23-26
+    priority: 100
+    hide-tooltip: true
+
+  confirm:
+    material: 'texture-a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756'
+    slot: 11
+    priority: 1
+    display_name: '&#68D878Подтвердить передачу'
+    lore:
+      - '&8ⓘ Смена владельца'
+      - ''
+      - ' &#F1E7CCВы станете участником.'
+      - ''
+      - ' &#68D878➜ Нажмите для подтверждения.'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[player] velevatorsaction confirmtransfer'
+
+  target:
+    material: 'texture-%velevators_selected_member_texture%'
+    slot: 13
+    priority: 1
+    enchantment_glint_override: true
+    display_name: '&#C9A24A%velevators_selected_member_name%'
+    lore:
+      - '&8ⓘ Новый владелец'
+      - ''
+      - ' &#F1E7CCСеть: &#45D6C5%velevators_network_name%'
+
+  cancel:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 15
+    priority: 1
+    display_name: '&#C93A3FОтмена'
+    lore:
+      - '&8ⓘ Владелец сохранения'
+      - ''
+      - ' &#C93A3F➜ Нажмите, чтобы вернуться'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction canceltransfer'

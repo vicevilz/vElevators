@@ -1,0 +1,1268 @@
+menu_title: '  &#151A16✦ &#45D6C5&l네트워크 발견 &#151A16✦'
+size: 54
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.0'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  header_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  footer_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 46-48
+      - 50-52
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-c3ffa9b958aacc2b3979cf63413e6cdd254340552085ff20d60404f50f3cd2c7'
+    slot: 4
+    priority: 1
+    display_name: '&#F1E7CC검색 결과'
+    lore:
+      - '&8ⓘ 글로벌 관리'
+      - ''
+      - ' &#F1E7CC페이지 &#68D878%velevators_admin_page%&#F1E7CC/&#68D878%velevators_admin_pages%'
+
+  network_00:
+    material: 'placeholder-%velevators_admin_network_0_icon%'
+    slot: 9
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_0_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_0_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_0_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_0_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_0_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_0_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_0_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_0_x% %velevators_admin_network_0_y% %velevators_admin_network_0_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_0_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 0'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 0'
+
+  network_01:
+    material: 'placeholder-%velevators_admin_network_1_icon%'
+    slot: 10
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_1_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_1_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_1_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_1_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_1_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_1_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_1_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_1_x% %velevators_admin_network_1_y% %velevators_admin_network_1_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_1_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 1'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 1'
+
+  network_02:
+    material: 'placeholder-%velevators_admin_network_2_icon%'
+    slot: 11
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_2_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_2_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_2_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_2_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_2_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_2_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_2_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_2_x% %velevators_admin_network_2_y% %velevators_admin_network_2_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_2_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 2'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 2'
+
+  network_03:
+    material: 'placeholder-%velevators_admin_network_3_icon%'
+    slot: 12
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_3_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_3_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_3_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_3_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_3_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_3_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_3_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_3_x% %velevators_admin_network_3_y% %velevators_admin_network_3_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_3_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 3'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 3'
+
+  network_04:
+    material: 'placeholder-%velevators_admin_network_4_icon%'
+    slot: 13
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_4_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_4_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_4_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_4_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_4_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_4_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_4_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_4_x% %velevators_admin_network_4_y% %velevators_admin_network_4_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_4_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 4'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 4'
+
+  network_05:
+    material: 'placeholder-%velevators_admin_network_5_icon%'
+    slot: 14
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_5_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_5_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_5_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_5_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_5_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_5_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_5_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_5_x% %velevators_admin_network_5_y% %velevators_admin_network_5_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_5_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 5'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 5'
+
+  network_06:
+    material: 'placeholder-%velevators_admin_network_6_icon%'
+    slot: 15
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_6_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_6_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_6_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_6_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_6_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_6_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_6_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_6_x% %velevators_admin_network_6_y% %velevators_admin_network_6_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_6_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 6'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 6'
+
+  network_07:
+    material: 'placeholder-%velevators_admin_network_7_icon%'
+    slot: 16
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_7_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_7_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_7_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_7_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_7_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_7_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_7_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_7_x% %velevators_admin_network_7_y% %velevators_admin_network_7_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_7_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 7'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 7'
+
+  network_08:
+    material: 'placeholder-%velevators_admin_network_8_icon%'
+    slot: 17
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_8_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_8_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_8_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_8_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_8_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_8_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_8_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_8_x% %velevators_admin_network_8_y% %velevators_admin_network_8_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_8_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 8'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 8'
+
+  network_09:
+    material: 'placeholder-%velevators_admin_network_9_icon%'
+    slot: 18
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_9_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_9_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_9_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_9_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_9_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_9_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_9_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_9_x% %velevators_admin_network_9_y% %velevators_admin_network_9_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_9_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 9'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 9'
+
+  network_10:
+    material: 'placeholder-%velevators_admin_network_10_icon%'
+    slot: 19
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_10_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_10_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_10_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_10_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_10_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_10_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_10_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_10_x% %velevators_admin_network_10_y% %velevators_admin_network_10_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_10_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 10'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 10'
+
+  network_11:
+    material: 'placeholder-%velevators_admin_network_11_icon%'
+    slot: 20
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_11_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_11_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_11_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_11_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_11_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_11_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_11_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_11_x% %velevators_admin_network_11_y% %velevators_admin_network_11_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_11_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 11'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 11'
+
+  network_12:
+    material: 'placeholder-%velevators_admin_network_12_icon%'
+    slot: 21
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_12_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_12_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_12_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_12_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_12_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_12_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_12_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_12_x% %velevators_admin_network_12_y% %velevators_admin_network_12_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_12_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 12'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 12'
+
+  network_13:
+    material: 'placeholder-%velevators_admin_network_13_icon%'
+    slot: 22
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_13_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_13_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_13_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_13_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_13_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_13_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_13_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_13_x% %velevators_admin_network_13_y% %velevators_admin_network_13_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_13_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 13'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 13'
+
+  network_14:
+    material: 'placeholder-%velevators_admin_network_14_icon%'
+    slot: 23
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_14_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_14_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_14_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_14_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_14_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_14_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_14_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_14_x% %velevators_admin_network_14_y% %velevators_admin_network_14_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_14_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 14'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 14'
+
+  network_15:
+    material: 'placeholder-%velevators_admin_network_15_icon%'
+    slot: 24
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_15_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_15_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_15_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_15_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_15_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_15_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_15_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_15_x% %velevators_admin_network_15_y% %velevators_admin_network_15_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_15_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 15'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 15'
+
+  network_16:
+    material: 'placeholder-%velevators_admin_network_16_icon%'
+    slot: 25
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_16_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_16_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_16_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_16_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_16_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_16_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_16_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_16_x% %velevators_admin_network_16_y% %velevators_admin_network_16_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_16_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 16'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 16'
+
+  network_17:
+    material: 'placeholder-%velevators_admin_network_17_icon%'
+    slot: 26
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_17_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_17_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_17_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_17_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_17_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_17_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_17_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_17_x% %velevators_admin_network_17_y% %velevators_admin_network_17_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_17_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 17'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 17'
+
+  network_18:
+    material: 'placeholder-%velevators_admin_network_18_icon%'
+    slot: 27
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_18_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_18_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_18_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_18_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_18_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_18_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_18_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_18_x% %velevators_admin_network_18_y% %velevators_admin_network_18_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_18_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 18'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 18'
+
+  network_19:
+    material: 'placeholder-%velevators_admin_network_19_icon%'
+    slot: 28
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_19_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_19_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_19_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_19_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_19_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_19_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_19_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_19_x% %velevators_admin_network_19_y% %velevators_admin_network_19_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_19_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 19'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 19'
+
+  network_20:
+    material: 'placeholder-%velevators_admin_network_20_icon%'
+    slot: 29
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_20_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_20_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_20_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_20_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_20_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_20_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_20_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_20_x% %velevators_admin_network_20_y% %velevators_admin_network_20_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_20_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 20'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 20'
+
+  network_21:
+    material: 'placeholder-%velevators_admin_network_21_icon%'
+    slot: 30
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_21_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_21_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_21_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_21_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_21_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_21_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_21_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_21_x% %velevators_admin_network_21_y% %velevators_admin_network_21_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_21_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 21'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 21'
+
+  network_22:
+    material: 'placeholder-%velevators_admin_network_22_icon%'
+    slot: 31
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_22_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_22_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_22_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_22_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_22_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_22_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_22_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_22_x% %velevators_admin_network_22_y% %velevators_admin_network_22_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_22_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 22'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 22'
+
+  network_23:
+    material: 'placeholder-%velevators_admin_network_23_icon%'
+    slot: 32
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_23_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_23_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_23_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_23_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_23_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_23_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_23_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_23_x% %velevators_admin_network_23_y% %velevators_admin_network_23_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_23_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 23'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 23'
+
+  network_24:
+    material: 'placeholder-%velevators_admin_network_24_icon%'
+    slot: 33
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_24_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_24_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_24_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_24_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_24_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_24_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_24_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_24_x% %velevators_admin_network_24_y% %velevators_admin_network_24_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_24_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 24'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 24'
+
+  network_25:
+    material: 'placeholder-%velevators_admin_network_25_icon%'
+    slot: 34
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_25_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_25_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_25_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_25_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_25_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_25_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_25_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_25_x% %velevators_admin_network_25_y% %velevators_admin_network_25_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_25_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 25'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 25'
+
+  network_26:
+    material: 'placeholder-%velevators_admin_network_26_icon%'
+    slot: 35
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_26_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_26_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_26_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_26_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_26_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_26_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_26_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_26_x% %velevators_admin_network_26_y% %velevators_admin_network_26_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_26_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 26'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 26'
+
+  network_27:
+    material: 'placeholder-%velevators_admin_network_27_icon%'
+    slot: 36
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_27_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_27_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_27_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_27_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_27_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_27_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_27_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_27_x% %velevators_admin_network_27_y% %velevators_admin_network_27_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_27_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 27'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 27'
+
+  network_28:
+    material: 'placeholder-%velevators_admin_network_28_icon%'
+    slot: 37
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_28_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_28_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_28_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_28_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_28_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_28_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_28_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_28_x% %velevators_admin_network_28_y% %velevators_admin_network_28_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_28_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 28'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 28'
+
+  network_29:
+    material: 'placeholder-%velevators_admin_network_29_icon%'
+    slot: 38
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_29_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_29_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_29_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_29_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_29_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_29_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_29_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_29_x% %velevators_admin_network_29_y% %velevators_admin_network_29_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_29_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 29'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 29'
+
+  network_30:
+    material: 'placeholder-%velevators_admin_network_30_icon%'
+    slot: 39
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_30_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_30_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_30_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_30_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_30_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_30_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_30_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_30_x% %velevators_admin_network_30_y% %velevators_admin_network_30_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_30_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 30'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 30'
+
+  network_31:
+    material: 'placeholder-%velevators_admin_network_31_icon%'
+    slot: 40
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_31_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_31_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_31_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_31_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_31_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_31_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_31_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_31_x% %velevators_admin_network_31_y% %velevators_admin_network_31_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_31_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 31'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 31'
+
+  network_32:
+    material: 'placeholder-%velevators_admin_network_32_icon%'
+    slot: 41
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_32_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_32_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_32_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_32_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_32_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_32_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_32_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_32_x% %velevators_admin_network_32_y% %velevators_admin_network_32_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_32_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 32'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 32'
+
+  network_33:
+    material: 'placeholder-%velevators_admin_network_33_icon%'
+    slot: 42
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_33_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_33_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_33_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_33_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_33_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_33_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_33_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_33_x% %velevators_admin_network_33_y% %velevators_admin_network_33_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_33_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 33'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 33'
+
+  network_34:
+    material: 'placeholder-%velevators_admin_network_34_icon%'
+    slot: 43
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_34_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_34_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_34_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_34_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_34_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_34_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_34_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_34_x% %velevators_admin_network_34_y% %velevators_admin_network_34_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_34_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 34'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 34'
+
+  network_35:
+    material: 'placeholder-%velevators_admin_network_35_icon%'
+    slot: 44
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#45D6C5%velevators_admin_network_35_name%'
+    lore:
+      - '&8ⓘ 등록된 네트워크 ID %velevators_admin_network_35_id%'
+      - ''
+      - ' &#F1E7CC소유자: &#C93A3F%velevators_admin_network_35_owner%'
+      - ' &#F1E7CC멤버: &#68D878%velevators_admin_network_35_members%'
+      - ' &#F1E7CC층: &#45D6C5%velevators_admin_network_35_floors%'
+      - ' &#F1E7CC액세스: &#C9A24A%velevators_admin_network_35_access_mode%'
+      - ' &#F1E7CC세계: &#68D878%velevators_admin_network_35_world%'
+      - ' &#F1E7CC좌표: &#68D878%velevators_admin_network_35_x% %velevators_admin_network_35_y% %velevators_admin_network_35_z%'
+      - ''
+      - ' &#45D6C5왼쪽 클릭 ➜ 관리'
+      - ' &#C9A24A오른쪽 클릭 ➜ 레벨 0으로 이동'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_admin_network_35_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkmanage 35'
+    right_click_commands:
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+      - '[close]'
+      - '[player] velevatorsaction adminnetworkteleport 35'
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 45
+    priority: 1
+    display_name: '&#45D6C5이전 페이지'
+    view_requirement:
+      requirements:
+        previous:
+          type: string equals
+          input: '%velevators_admin_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkpage -1'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 49
+    priority: 1
+    display_name: '&#C9A24A검색 엔진으로 돌아가기'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminback'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 53
+    priority: 1
+    display_name: '&#45D6C5다음 페이지'
+    view_requirement:
+      requirements:
+        next:
+          type: string equals
+          input: '%velevators_admin_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminnetworkpage 1'

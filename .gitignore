@@ -1,0 +1,60 @@
+# Gradle, Java and generated distribution files
+.gradle/
+build/
+out/
+target/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE metadata
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# Local servers and private runtime data
+test-servers/
+test-runs/
+run/
+plugins/
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+*.log
+*.log.gz
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+server.properties
+eula.txt
+ops.json
+whitelist.json
+usercache.json
+banned-players.json
+banned-ips.json
+
+# Environment, credentials and local overrides
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+local.properties
+hs_err_pid*
+replay_pid*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

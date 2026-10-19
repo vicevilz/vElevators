@@ -1,0 +1,1022 @@
+menu_title: '    &#151A16✦ &#45D6C5&lレベル管理 &#151A16✦'
+size: 54
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.1'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  footer_accent:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 46-48
+      - 50-52
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  floor_header:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 9-17
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  floor_space:
+    material: AIR
+    slots:
+      - 19-25
+      - 28-34
+      - 37-43
+    priority: 90
+
+  rename_network:
+    #material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY3MjA4NWZmNWRmMGVlODUyMTM2ZTJkNDFhNzY5MjI5MjkxZDY2NmIyOGU5ZmIwNGQ2YzkyZjE1OGU0MmJiIn19fQ=='
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJlNmNiZjRhNGVmYmE3OTQ3N2M5NDg0YjBiNDlmM2QyOTFjNWU3ZjYyYWY0M2Q5YTY5MDgyMzU4MDJmZjU4YyJ9fX0='
+    slot: 0
+    priority: 1
+    display_name: '&#45D6C5名前を変更'
+    lore:
+      - '&8ⓘ ネットワークのカスタマイズ'
+      - ''
+      - ' &#F1E7CC現在の名前: &#68D878%velevators_network_name%'
+      - ''
+      - ' &#45D6C5➜ クリックして名前を変更します'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction renamenetwork'
+    view_requirement: &network_admin_requirement
+      requirements:
+        can_administer:
+          type: string equals
+          input: '%velevators_can_administer_network%'
+          output: 'yes'
+
+  network_icon:
+    #material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc2MmYxZWQxYzA2NDIyNTcwNjA3MWY0ZGU1MjFmOGRkOTAxYzI0M2I1NGRiODI5MWYxNzMyZWI2ZjgyYTI3MiJ9fX0='
+    material: 'texture-8122a503d7a6f57802b03af7624194a4c4f5077a99ae21dd276ce7db88bc38ae'
+    slot: 1
+    priority: 1
+    display_name: '&#C9A24Aアイコンの変更'
+    lore:
+      - '&8ⓘ ネットワークのカスタマイズ'
+      - ''
+      - ' &#F1E7CC現在のアイコン: &#C9A24A%velevators_network_icon%'
+      - ''
+      - ' &#C9A24A➜ クリックして別のものを選択してください'
+    left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction networkicons'
+    view_requirement: *network_admin_requirement
+
+  view_members:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 2
+    priority: 1
+    display_name: '&#45D6C5オーナーとメンバー'
+    lore:
+      - '&8ⓘ ネットワーク ディレクトリ'
+      - ''
+      - ' &#F1E7CC所有者: &#C93A3F%velevators_network_owner%'
+      - ' &#F1E7CCメンバー: &#68D878%velevators_network_member_count%'
+      - ''
+      - ' &#45D6C5➜ クリックして表示'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction viewmembers'
+
+  add_member:
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19'
+    slot: 3
+    priority: 1
+    display_name: '&#68D878メンバーを追加'
+    lore:
+      - '&8ⓘ 管理'
+      - ''
+      - ' &#68D878➜ クリックしてセレクターを開きます'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction addmember'
+    view_requirement: *network_admin_requirement
+
+  information:
+    material: 'placeholder-%velevators_network_icon%'
+    slot: 4
+    priority: 1
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_network_name%'
+    lore:
+      - '&8ⓘ エレベーター ネットワーク'
+      - ''
+      - ' &#F1E7CC所有者: &#C93A3F%velevators_network_owner%'
+      - ' &#F1E7CCメンバー: &#68D878%velevators_network_member_count%'
+      - ' &#F1E7CCフロア: &#45D6C5%velevators_network_floors%'
+      - ' &#F1E7CC一般アクセス: &#C9A24A%velevators_network_access_mode%'
+      - ''
+      - ' &#202721制限されたレベルは無視されます'
+      - ' &#202721旅行中に自動的に。'
+
+  remove_member:
+    material: 'texture-4e4b8b8d2362c864e062301487d94d3272a6b570afbf80c2c5b148c954579d46'
+    slot: 5
+    priority: 1
+    display_name: '&#C93A3Fメンバーを削除'
+    lore:
+      - '&8ⓘ 管理'
+      - ''
+      - ' &#C93A3F➜ クリックしてセレクターを開きます'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction removemember'
+    view_requirement: *network_admin_requirement
+
+  transfer_owner:
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFiMGE1YmJjNjk3YzBjNDJhNmNmMWI5YzRjNDQzNWIwNzMyMmZjZTViYjI3ZDgyYjY5MzA4NDNlNWFiN2EwOSJ9fX0='
+    slot: 6
+    priority: 1
+    display_name: '&#C9A24A所有権を譲渡'
+    lore:
+      - '&8ⓘ 管理'
+      - ''
+      - ' &#F1E7CC新しい所有者はメンバーである必要があります。'
+      - ' &#F1E7CCあなたはメンバーのままになります。'
+      - ''
+      - ' &#C9A24A➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_VILLAGER_YES'
+      - '[player] velevatorsaction transferowner'
+    view_requirement: *network_admin_requirement
+
+  network_access:
+    material: 'texture-%velevators_network_access_texture%'
+    slot: 7
+    priority: 1
+    update: true
+    display_name: '&#45D6C5アクセス権の変更'
+    lore:
+      - '&8ⓘ 一般的な安全性'
+      - ''
+      - ' &#F1E7CC現在のモード: &#C9A24A%velevators_network_access_mode%'
+      - ''
+      - ' &#68D878パブリック &#F1E7CC→ 任意'
+      - ' &#C9A24Aプライベート &#F1E7CC→ オーナーとメンバー'
+      - ' &#C93A3F所有者のみ'
+      - ''
+      - ' &#45D6C5➜ クリックしてモードを変更します'
+    left_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction networkaccess'
+    view_requirement: *network_admin_requirement
+
+  delete_network:
+    material: 'texture-be0fd10199e8e4fcdabcae4f85c85918127a7c5553ad235f01c56d18bb9470d3'
+    slot: 8
+    priority: 1
+    display_name: '&#C93A3Fネットワーク全体を削除します'
+    lore:
+      - '&8ⓘ 危険エリア'
+      - ''
+      - ' &#F1E7CC登録されているすべてのレベルを削除します'
+      - ' &#F1E7CC物理ブロックは削除されません。'
+      - ''
+      - ' &#C93A3F➜ クリックして続行'
+    left_click_commands:
+      - '[sound] ENTITY_WITHER_HURT'
+      - '[player] velevatorsaction deletenetwork'
+    view_requirement: *network_admin_requirement
+
+  floor_00:
+    material: 'placeholder-%velevators_floor_0_icon%'
+    slot: 19
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_0_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_0_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_0_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_0_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_0_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 0'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 0'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 0'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 0'
+
+  floor_01:
+    material: 'placeholder-%velevators_floor_1_icon%'
+    slot: 20
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_1_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_1_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_1_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_1_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_1_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 1'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 1'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 1'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 1'
+
+  floor_02:
+    material: 'placeholder-%velevators_floor_2_icon%'
+    slot: 21
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_2_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_2_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_2_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_2_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_2_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 2'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 2'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 2'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 2'
+
+  floor_03:
+    material: 'placeholder-%velevators_floor_3_icon%'
+    slot: 22
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_3_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_3_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_3_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_3_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_3_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 3'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 3'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 3'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 3'
+
+  floor_04:
+    material: 'placeholder-%velevators_floor_4_icon%'
+    slot: 23
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_4_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_4_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_4_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_4_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_4_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 4'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 4'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 4'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 4'
+
+  floor_05:
+    material: 'placeholder-%velevators_floor_5_icon%'
+    slot: 24
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_5_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_5_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_5_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_5_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_5_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 5'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 5'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 5'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 5'
+
+  floor_06:
+    material: 'placeholder-%velevators_floor_6_icon%'
+    slot: 25
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_6_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_6_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_6_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_6_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_6_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 6'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 6'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 6'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 6'
+
+  floor_07:
+    material: 'placeholder-%velevators_floor_7_icon%'
+    slot: 28
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_7_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_7_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_7_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_7_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_7_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 7'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 7'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 7'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 7'
+
+  floor_08:
+    material: 'placeholder-%velevators_floor_8_icon%'
+    slot: 29
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_8_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_8_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_8_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_8_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_8_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 8'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 8'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 8'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 8'
+
+  floor_09:
+    material: 'placeholder-%velevators_floor_9_icon%'
+    slot: 30
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_9_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_9_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_9_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_9_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_9_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 9'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 9'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 9'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 9'
+
+  floor_10:
+    material: 'placeholder-%velevators_floor_10_icon%'
+    slot: 31
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_10_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_10_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_10_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_10_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_10_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 10'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 10'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 10'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 10'
+
+  floor_11:
+    material: 'placeholder-%velevators_floor_11_icon%'
+    slot: 32
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_11_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_11_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_11_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_11_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_11_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 11'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 11'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 11'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 11'
+
+  floor_12:
+    material: 'placeholder-%velevators_floor_12_icon%'
+    slot: 33
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_12_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_12_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_12_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_12_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_12_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 12'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 12'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 12'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 12'
+
+  floor_13:
+    material: 'placeholder-%velevators_floor_13_icon%'
+    slot: 34
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_13_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_13_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_13_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_13_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_13_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 13'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 13'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 13'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 13'
+
+  floor_14:
+    material: 'placeholder-%velevators_floor_14_icon%'
+    slot: 37
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_14_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_14_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_14_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_14_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_14_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 14'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 14'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 14'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 14'
+
+  floor_15:
+    material: 'placeholder-%velevators_floor_15_icon%'
+    slot: 38
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_15_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_15_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_15_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_15_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_15_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 15'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 15'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 15'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 15'
+
+  floor_16:
+    material: 'placeholder-%velevators_floor_16_icon%'
+    slot: 39
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_16_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_16_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_16_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_16_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_16_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 16'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 16'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 16'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 16'
+
+  floor_17:
+    material: 'placeholder-%velevators_floor_17_icon%'
+    slot: 40
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_17_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_17_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_17_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_17_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_17_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 17'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 17'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 17'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 17'
+
+  floor_18:
+    material: 'placeholder-%velevators_floor_18_icon%'
+    slot: 41
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_18_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_18_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_18_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_18_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_18_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 18'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 18'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 18'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 18'
+
+  floor_19:
+    material: 'placeholder-%velevators_floor_19_icon%'
+    slot: 42
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_19_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_19_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_19_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_19_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_19_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 19'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 19'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 19'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 19'
+
+  floor_20:
+    material: 'placeholder-%velevators_floor_20_icon%'
+    slot: 43
+    priority: 1
+    update: true
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_floor_20_name%'
+    lore:
+      - '&8ⓘ エレベーターレベル'
+      - ''
+      - ' &#F1E7CC高さ Y: &#68D878%velevators_floor_20_y%'
+      - ' &#F1E7CC世界: &#68D878%velevators_floor_20_world%'
+      - ' &#F1E7CCアクセス: &#45D6C5%velevators_floor_20_access_mode%'
+      - ''
+      - ' &#68D878左クリック ➜ 名前を変更'
+      - ' &#C93A3F右クリック ➜ 削除'
+      - ' &#45D6C5Shift + 左 ➜ アイコンを変更'
+      - ' &#C9A24AShift + 右 ➜ アクセス権の変更'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_floor_20_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction rename 20'
+    right_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+      - '[player] velevatorsaction delete 20'
+    shift_left_click_commands:
+      - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+      - '[player] velevatorsaction flooricons 20'
+    shift_right_click_commands:
+      - '[sound] BLOCK_IRON_TRAPDOOR_OPEN'
+      - '[player] velevatorsaction flooraccess 20'
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 45
+    priority: 1
+    display_name: '&#45D6C5前のページ'
+    lore:
+      - '&8ⓘ ナビゲーション'
+      - ''
+      - ' &#F1E7CCページ &#68D878%velevators_page%&#F1E7CC/&#68D878%velevators_pages%'
+    view_requirement:
+      requirements:
+        previous:
+          type: string equals
+          input: '%velevators_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction page -1'
+
+  close:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 49
+    priority: 1
+    display_name: '&#C93A3F閉じる'
+    lore:
+      - '&8ⓘ ナビゲーション'
+      - ''
+      - ' &#C93A3F➜ クリックして閉じます'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 53
+    priority: 1
+    display_name: '&#45D6C5次のページ'
+    lore:
+      - '&8ⓘ ナビゲーション'
+      - ''
+      - ' &#F1E7CCページ &#68D878%velevators_page%&#F1E7CC/&#68D878%velevators_pages%'
+    view_requirement:
+      requirements:
+        next:
+          type: string equals
+          input: '%velevators_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction page 1'

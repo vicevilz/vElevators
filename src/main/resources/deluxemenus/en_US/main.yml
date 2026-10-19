@@ -1,0 +1,163 @@
+menu_title: '        &#151A16✦ &#39A857&lELEVATORS &#151A16✦'
+size: 45
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.15'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  accent_corners:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 36
+      - 44
+    priority: 90
+    display_name: ' '
+    hide_tooltip: true
+
+  structure:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4ZWU2ZWRmYTk4ZGI1ZWFlOWI5Yzk5MzZlOTQ0ODliMmQ0YmJiZDNkMmI0YjZiNDg4NWEzMjI0MDYxM2MifX19
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#FF4C4CRequired structure'
+    lore:
+      - '&8ⓘ How to create a level'
+      - ''
+      - ' &#F1E7CCTop block: &#68D878%velevators_elevator_block%'
+      - ' &#F1E7CCMandatory base: &#C93A3FREDSTONE_BLOCK'
+      - ''
+      - ' &#F1E7CCPlace both blocks on the same'
+      - ' &#F1E7CCcoordinate X and Z.'
+      - ''
+      - ' &#202721The structure will not be active yet'
+      - ' &#202721until you register it from this menu.'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  create:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc3YmI2NmZjNzNhOTdjZWZjYjNhNGJmZGNjYjEyMjgxZjQ0ZGQzMjZjY2QwZmYzOWQ0N2U5ODViZmVmZjM0MyJ9fX0=
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#53EA91Add a level'
+    lore:
+      - '&8✦ New station'
+      - ''
+      - ' &#F1E7CCPrice per level: &#C9A24A%velevators_price%€'
+      - ' &#F1E7CCEach height is paid separately.'
+      - ''
+      - ' &#FCD22A⏏ Click to select the structure'
+    left_click_commands:
+      - '[sound] BLOCK_BEACON_ACTIVATE'
+      - '[close]'
+      - '[player] velevatorsaction select'
+
+  statistics:
+    material: head-%player_name%
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#45D6C5Y&#44D7C2o&#43D7BFu&#41D8BCr &#40D9B9i&#3FD9B6n&#3EDAB3f&#3CDAB0o&#3BDBACr&#3ADCA9m&#39DCA6a&#38DDA3t&#36DEA0i&#35DE9Do&#34DF9An'
+    lore:
+      - '&8✦ Personal summary'
+      - ''
+      - ' &#F1E7CCRegistered networks: &#68D878%velevators_player_networks%'
+      - ''
+      - ' &#68D878Your head represents your profile'
+      - ' &#202721within the elevator system.'
+      - ''
+      - ' &#202721Manage a network by right clicking'
+      - ' &#202721on any of its levels.'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+
+  network_status:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZiNzFlNzllZDVlOWRiYzUwNWY0N2RlMzQ0ZWFkZDk1ODg5NzNhZGU5Y2FiNzc2M2M0YTU5ZjgyMTMwZDMifX19
+    slot: 22
+    priority: 1
+    display_name: '&#6AD79ELinked networks'
+    lore:
+      - '&8✦ Automatic system'
+      - ''
+      - ' &#F1E7CCThe levels of the same owner,'
+      - ' &#F1E7CCworld, X and Z connect automatically.'
+      - ''
+      - ' &#68D878There is no artificial limit'
+      - ' &#68D878of levels on the same network.'
+      - ''
+      - ' &#202721Each height retains its own name'
+      - ' &#202721and its own location.'
+
+  linking:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 29
+    priority: 1
+    display_name: '&#7C83FDAutomatic pairing'
+    lore:
+      - '&8✦ Connection between heights'
+      - ''
+      - ' &#F1E7CCSame owner'
+      - ' &#F1E7CCSame world'
+      - ' &#F1E7CCSame coordinate X and Z'
+      - ''
+      - ' &#68D878➜ Levels connect themselves'
+    left_click_commands:
+      - '[sound] BLOCK_CHAIN_PLACE'
+
+  controls:
+    material: 'texture-105a2cab8b68ea57e3af992a36e47c8ff9aa87cc8776281966f8c3cf31a38'
+    slot: 31
+    priority: 1
+    display_name: '&#79B8FFTravel Controls'
+    lore:
+      - '&8✦ Movement between levels'
+      - ''
+      - ' &#68D878Skip &#F1E7CC→ go up to the next level'
+      - ' &#C9A24ACrouch &#F1E7CC→ go down to previous'
+      - ''
+      - ' &#F1E7CCThe destination must have'
+      - ' &#F1E7CCtwo traversable blocks.'
+      - ''
+      - ' &#202721The journey preserves your orientation.'
+
+  help:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=
+    slot: 33
+    priority: 1
+    display_name: '&#F6C85FQuick Help'
+    lore:
+      - '&8✦ Operation'
+      - ''
+      - ' &#F1E7CC1. Prepare the structure'
+      - ' &#F1E7CC2. Add the level from this menu'
+      - ' &#F1E7CC3. Confirm payment'
+      - ' &#F1E7CC4. Jump or crouch to travel'
+      - ''
+      - ' &#68D878Names can be customized'
+      - ' &#68D878from the management menu.'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+
+  close:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&#FF4C4CClose'
+    lore:
+      - '&8✦ Exit panel'
+      - ''
+      - ' &#FCD22A⏏ Click to close'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'

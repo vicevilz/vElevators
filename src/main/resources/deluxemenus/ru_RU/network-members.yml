@@ -1,0 +1,769 @@
+menu_title: '  &#151A16✦ &#45D6C5&lЛЮДИ В СЕТИ &#151A16✦'
+size: 54
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.1'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  header_accent:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  footer_accent:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 46-48
+      - 50-52
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 4
+    priority: 1
+    display_name: '&#45D6C5%velevators_network_name%'
+    lore:
+      - '&8ⓘ Владелец и участники'
+      - ''
+      - ' &#F1E7CCВладелец: &#C93A3F%velevators_network_owner%'
+      - ' &#F1E7CCЧлены: &#68D878%velevators_network_member_count%'
+      - ''
+      - ' &#202721Красный: владелец'
+      - ' &#202721Зеленый: член'
+
+  member_00:
+    material: 'texture-%velevators_member_player_0_texture%'
+    slot: 9
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_0_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_0_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_0_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_0_exists%'
+          output: 'yes'
+
+  member_01:
+    material: 'texture-%velevators_member_player_1_texture%'
+    slot: 10
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_1_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_1_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_1_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_1_exists%'
+          output: 'yes'
+
+  member_02:
+    material: 'texture-%velevators_member_player_2_texture%'
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_2_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_2_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_2_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_2_exists%'
+          output: 'yes'
+
+  member_03:
+    material: 'texture-%velevators_member_player_3_texture%'
+    slot: 12
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_3_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_3_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_3_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_3_exists%'
+          output: 'yes'
+
+  member_04:
+    material: 'texture-%velevators_member_player_4_texture%'
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_4_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_4_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_4_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_4_exists%'
+          output: 'yes'
+
+  member_05:
+    material: 'texture-%velevators_member_player_5_texture%'
+    slot: 14
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_5_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_5_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_5_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_5_exists%'
+          output: 'yes'
+
+  member_06:
+    material: 'texture-%velevators_member_player_6_texture%'
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_6_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_6_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_6_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_6_exists%'
+          output: 'yes'
+
+  member_07:
+    material: 'texture-%velevators_member_player_7_texture%'
+    slot: 16
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_7_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_7_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_7_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_7_exists%'
+          output: 'yes'
+
+  member_08:
+    material: 'texture-%velevators_member_player_8_texture%'
+    slot: 17
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_8_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_8_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_8_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_8_exists%'
+          output: 'yes'
+
+  member_09:
+    material: 'texture-%velevators_member_player_9_texture%'
+    slot: 18
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_9_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_9_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_9_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_9_exists%'
+          output: 'yes'
+
+  member_10:
+    material: 'texture-%velevators_member_player_10_texture%'
+    slot: 19
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_10_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_10_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_10_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_10_exists%'
+          output: 'yes'
+
+  member_11:
+    material: 'texture-%velevators_member_player_11_texture%'
+    slot: 20
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_11_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_11_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_11_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_11_exists%'
+          output: 'yes'
+
+  member_12:
+    material: 'texture-%velevators_member_player_12_texture%'
+    slot: 21
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_12_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_12_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_12_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_12_exists%'
+          output: 'yes'
+
+  member_13:
+    material: 'texture-%velevators_member_player_13_texture%'
+    slot: 22
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_13_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_13_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_13_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_13_exists%'
+          output: 'yes'
+
+  member_14:
+    material: 'texture-%velevators_member_player_14_texture%'
+    slot: 23
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_14_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_14_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_14_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_14_exists%'
+          output: 'yes'
+
+  member_15:
+    material: 'texture-%velevators_member_player_15_texture%'
+    slot: 24
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_15_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_15_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_15_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_15_exists%'
+          output: 'yes'
+
+  member_16:
+    material: 'texture-%velevators_member_player_16_texture%'
+    slot: 25
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_16_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_16_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_16_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_16_exists%'
+          output: 'yes'
+
+  member_17:
+    material: 'texture-%velevators_member_player_17_texture%'
+    slot: 26
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_17_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_17_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_17_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_17_exists%'
+          output: 'yes'
+
+  member_18:
+    material: 'texture-%velevators_member_player_18_texture%'
+    slot: 27
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_18_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_18_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_18_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_18_exists%'
+          output: 'yes'
+
+  member_19:
+    material: 'texture-%velevators_member_player_19_texture%'
+    slot: 28
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_19_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_19_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_19_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_19_exists%'
+          output: 'yes'
+
+  member_20:
+    material: 'texture-%velevators_member_player_20_texture%'
+    slot: 29
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_20_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_20_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_20_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_20_exists%'
+          output: 'yes'
+
+  member_21:
+    material: 'texture-%velevators_member_player_21_texture%'
+    slot: 30
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_21_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_21_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_21_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_21_exists%'
+          output: 'yes'
+
+  member_22:
+    material: 'texture-%velevators_member_player_22_texture%'
+    slot: 31
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_22_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_22_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_22_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_22_exists%'
+          output: 'yes'
+
+  member_23:
+    material: 'texture-%velevators_member_player_23_texture%'
+    slot: 32
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_23_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_23_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_23_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_23_exists%'
+          output: 'yes'
+
+  member_24:
+    material: 'texture-%velevators_member_player_24_texture%'
+    slot: 33
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_24_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_24_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_24_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_24_exists%'
+          output: 'yes'
+
+  member_25:
+    material: 'texture-%velevators_member_player_25_texture%'
+    slot: 34
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_25_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_25_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_25_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_25_exists%'
+          output: 'yes'
+
+  member_26:
+    material: 'texture-%velevators_member_player_26_texture%'
+    slot: 35
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_26_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_26_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_26_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_26_exists%'
+          output: 'yes'
+
+  member_27:
+    material: 'texture-%velevators_member_player_27_texture%'
+    slot: 36
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_27_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_27_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_27_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_27_exists%'
+          output: 'yes'
+
+  member_28:
+    material: 'texture-%velevators_member_player_28_texture%'
+    slot: 37
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_28_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_28_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_28_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_28_exists%'
+          output: 'yes'
+
+  member_29:
+    material: 'texture-%velevators_member_player_29_texture%'
+    slot: 38
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_29_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_29_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_29_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_29_exists%'
+          output: 'yes'
+
+  member_30:
+    material: 'texture-%velevators_member_player_30_texture%'
+    slot: 39
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_30_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_30_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_30_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_30_exists%'
+          output: 'yes'
+
+  member_31:
+    material: 'texture-%velevators_member_player_31_texture%'
+    slot: 40
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_31_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_31_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_31_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_31_exists%'
+          output: 'yes'
+
+  member_32:
+    material: 'texture-%velevators_member_player_32_texture%'
+    slot: 41
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_32_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_32_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_32_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_32_exists%'
+          output: 'yes'
+
+  member_33:
+    material: 'texture-%velevators_member_player_33_texture%'
+    slot: 42
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_33_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_33_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_33_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_33_exists%'
+          output: 'yes'
+
+  member_34:
+    material: 'texture-%velevators_member_player_34_texture%'
+    slot: 43
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_34_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_34_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_34_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_34_exists%'
+          output: 'yes'
+
+  member_35:
+    material: 'texture-%velevators_member_player_35_texture%'
+    slot: 44
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_35_name%'
+    lore:
+      - '&8ⓘ Сетевой человек'
+      - ''
+      - ' &#F1E7CCРоль: %velevators_member_player_35_relation_colored%'
+      - ' &#F1E7CCСтатус: &#45D6C5%velevators_member_player_35_connection%'
+      
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_35_exists%'
+          output: 'yes'
+
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 45
+    priority: 1
+    display_name: '&#45D6C5Предыдущая страница'
+    view_requirement:
+      requirements:
+        previous:
+          type: string equals
+          input: '%velevators_member_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction directorypage -1'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 49
+    priority: 1
+    display_name: '&#C9A24AВернуться к управлению'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction memberback'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 53
+    priority: 1
+    display_name: '&#45D6C5Следующая страница'
+    view_requirement:
+      requirements:
+        next:
+          type: string equals
+          input: '%velevators_member_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction directorypage 1'

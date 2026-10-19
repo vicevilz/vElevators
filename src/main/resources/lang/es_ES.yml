@@ -1,0 +1,133 @@
+prefix: '&#39A857&lvElevators &8» &r'
+
+access-modes:
+  public: 'Pública'
+  private: 'Privada'
+  owner-only: 'Solo propietario'
+
+errors:
+  no-permission: '{prefix}&#C93A3FNo tienes permiso para hacer eso.'
+  players-only: '{prefix}&#C93A3FEste comando solo puede usarlo un jugador.'
+  usage: '{prefix}&#F1E7CCUso: &f/velevators&7, &f/velevators reload&7, &f/velevators adminlog &7o &f/velevators transactions'
+  session-expired: '{prefix}&#C93A3FEsta acción ha caducado. Abre el menú de nuevo.'
+  database: '{prefix}&#C93A3FNo se pudo completar la operación. Se ha registrado el error.'
+  menu-open: '{prefix}&#C93A3FDeluxeMenus no pudo abrir este menú.'
+  network-not-found: '{prefix}&#C93A3FEsta red de ascensores ya no existe.'
+  floor-not-found: '{prefix}&#C93A3FEste piso ya no existe.'
+  not-owner: '{prefix}&#C93A3FSolo el propietario o un miembro puede gestionar esta red.'
+  owner-only: '{prefix}&#C93A3FSolo el propietario o un administrador puede cambiar esta configuración.'
+
+creation:
+  select: '{prefix}&#F1E7CCHaz clic derecho sobre el bloque superior de la estructura. &7Dispones de {seconds} segundos.'
+  selection-timeout: '{prefix}&#C9A24ASe ha agotado el tiempo para seleccionar la estructura.'
+  invalid-structure: '{prefix}&#C93A3FEstructura inválida: necesitas el bloque configurado directamente sobre un bloque de redstone.'
+  already-registered: '{prefix}&#C93A3FEsta ubicación ya pertenece a un ascensor.'
+  insufficient-funds: '{prefix}&#C93A3FNo tienes los {price} necesarios para crear este piso.'
+  economy-failure: '{prefix}&#C93A3FEl proveedor económico rechazó el cobro.'
+  success: '{prefix}&#68D878Piso creado correctamente. &7Importe pagado: &#C9A24A{price}&7.'
+  cancelled: '{prefix}&#C9A24AHas cancelado la creación del piso.'
+
+rename:
+  prompt: '{prefix}&#F1E7CCEscribe el nuevo nombre en el chat &7(máximo {limit} caracteres, &f/cancel&7 para salir)&f.'
+  invalid: '{prefix}&#C93A3FEl nombre debe contener texto visible.'
+  invalid-color: '{prefix}&#C93A3FLos nombres de pisos no admiten códigos de color.'
+  too-long: '{prefix}&#C93A3FEl nombre supera el límite de {limit} caracteres.'
+  success: '{prefix}&#68D878Piso renombrado a &#F1E7CC{name}&#68D878.'
+  cancelled: '{prefix}&#C9A24AHas cancelado el cambio de nombre.'
+  timeout: '{prefix}&#C9A24ASe ha agotado el tiempo para escribir el nombre.'
+
+deletion:
+  success: '{prefix}&#68D878Piso eliminado. &7Los bloques físicos se han conservado y no se ha reembolsado el precio.'
+  cancelled: '{prefix}&#C9A24AHas cancelado la eliminación del piso.'
+
+members:
+  add-prompt: '{prefix}&#F1E7CCEscribe el nombre del jugador que quieres añadir &7(&f/cancel&7 para salir)&f. Dispones de &#C9A24A{seconds} segundos&f.'
+  remove-prompt: '{prefix}&#F1E7CCEscribe el nombre del miembro que quieres eliminar &7(&f/cancel&7 para salir)&f. Dispones de &#C9A24A{seconds} segundos&f.'
+  invalid-name: '{prefix}&#C93A3FEscribe un nombre de Minecraft válido, de 3 a 16 caracteres.'
+  player-not-found: '{prefix}&#C93A3FNo se ha encontrado ningún jugador llamado &#F1E7CC{player}&#C93A3F.'
+  player-went-offline: '{prefix}&#C9A24A{player} se ha desconectado. La lista se ha actualizado.'
+  owner-not-member: '{prefix}&#C93A3FEl propietario tiene acceso permanente y no forma parte de la lista de miembros.'
+  already-member: '{prefix}&#C9A24A{player} ya pertenece a esta red.'
+  not-member: '{prefix}&#C93A3F{player} no pertenece a esta red.'
+  added: '{prefix}&#68D878Has añadido a &#F1E7CC{player} &#68D878como miembro de la red.'
+  removed: '{prefix}&#68D878Has eliminado a &#F1E7CC{player} &#68D878de los miembros de la red.'
+  cancelled: '{prefix}&#C9A24AHas cancelado la gestión de miembros.'
+  timeout: '{prefix}&#C9A24ASe ha agotado el tiempo para escribir el nombre del jugador.'
+
+network:
+  locked: '{prefix}&#C93A3FRed privada. &7Solo el propietario y sus miembros podrán utilizarla.'
+  unlocked: '{prefix}&#68D878Red pública. &7Cualquier jugador con permiso podrá utilizarla.'
+  rename-prompt: '{prefix}&#F1E7CCEscribe el nuevo nombre de la red &7(máximo {limit} caracteres, &f/cancel&7 para salir)&f.'
+  rename-invalid: '{prefix}&#C93A3FEl nombre de la red debe ser visible, no contener colores y respetar el límite de {limit} caracteres.'
+  rename-success: '{prefix}&#68D878La red ahora se llama &#F1E7CC{name}&#68D878.'
+  rename-timeout: '{prefix}&#C9A24ASe ha agotado el tiempo para renombrar la red.'
+  access-updated: '{prefix}&#68D878Modo de acceso de la red: &#F1E7CC{mode}&#68D878.'
+  floor-access-updated: '{prefix}&#68D878Acceso de &#F1E7CC{floor}&#68D878: &#F1E7CC{mode}&#68D878.'
+  delete-success: '{prefix}&#68D878Red eliminada completamente. &7Los bloques físicos permanecen y no se ha devuelto dinero.'
+  delete-cancelled: '{prefix}&#C9A24AHas conservado la red.'
+
+icons:
+  invalid: '{prefix}&#C93A3FEl icono seleccionado no forma parte del catálogo permitido.'
+  network-updated: '{prefix}&#68D878Icono de red actualizado a &#F1E7CC{icon}&#68D878.'
+  floor-updated: '{prefix}&#68D878Icono de piso actualizado a &#F1E7CC{icon}&#68D878.'
+
+transfer:
+  success: '{prefix}&#68D878Has transferido la red a &#F1E7CC{player}&#68D878. Ahora sigues formando parte de ella como miembro.'
+  cancelled: '{prefix}&#C9A24AHas cancelado la transferencia de propiedad.'
+  invalid-target: '{prefix}&#C93A3FEl jugador seleccionado ya no es miembro válido de esta red.'
+  conflict: '{prefix}&#C93A3FNo se puede transferir: el nuevo propietario ya tiene otra red en esas coordenadas.'
+
+admin-search:
+  owner-prompt: '{prefix}&#F1E7CCEscribe el nombre exacto del propietario. &7Dispones de {seconds} segundos y puedes usar &f/cancel&7.'
+  world-prompt: '{prefix}&#F1E7CCEscribe el nombre exacto del mundo. &7Dispones de {seconds} segundos y puedes usar &f/cancel&7.'
+  coords-prompt: '{prefix}&#F1E7CCEscribe &f<x> <z> &#F1E7CCpara el mundo actual o &f<world> <x> <z>&#F1E7CC. &7Dispones de {seconds} segundos.'
+  invalid: '{prefix}&#C93A3FEl valor de búsqueda no es válido.'
+  invalid-coordinates: '{prefix}&#C93A3FFormato incorrecto. Usa &f<x> <z> &co &f<world> <x> <z>&c.'
+  no-results: '{prefix}&#C9A24ANo se ha encontrado ninguna red con ese criterio.'
+  timeout: '{prefix}&#C9A24ASe ha agotado el tiempo de búsqueda administrativa.'
+  cancelled: '{prefix}&#C9A24AHas cancelado la búsqueda administrativa.'
+  teleported: '{prefix}&#68D878Te has teletransportado al Piso 0 de &#F1E7CC{network}&#68D878.'
+  teleport-failed: '{prefix}&#C93A3FNo se pudo encontrar un Piso 0 activo para esa red.'
+
+travel:
+  no-floor-above: '{prefix}&#C9A24ANo hay ningún piso superior.'
+  no-floor-below: '{prefix}&#C9A24ANo hay ningún piso inferior.'
+  unsafe: '{prefix}&#C93A3FEl destino está obstruido y no es seguro.'
+  broken: '{prefix}&#C93A3FLa estructura de uno de los pisos está incompleta.'
+  locked: '{prefix}&#C93A3FEsta red está bloqueada. Solo pueden utilizarla el propietario y sus miembros.'
+  inaccessible: '{prefix}&#C93A3FNo hay ningún piso accesible en esa dirección.'
+
+protection:
+  registered: '{prefix}&#C93A3FPrimero elimina el piso desde el menú de gestión.'
+
+admin:
+  reloaded: '{prefix}&#68D878Configuración, idioma, alias y menús recargados.'
+  reload-failed: '{prefix}&#C93A3FLa recarga ha fallado. Revisa la consola.'
+
+transactions:
+  usage: '{prefix}&#F1E7CCUso: &f/velevators transactions <list|collect|total|clear> [page]'
+  invalid-page: '{prefix}&#C93A3FEsa página no existe.'
+  empty: '{prefix}&#C9A24ANo hay pagos pendientes en transactions.log.'
+  total: '{prefix}&#F1E7CCHay &#68D878{count} pagos &#F1E7CCpendientes por un total de &#C9A24A{amount}&#F1E7CC.'
+  collected: '{prefix}&#68D878Se han añadido &#C9A24A{amount} &#68D878a tu cuenta y se han archivado &#F1E7CC{count} pagos&#68D878.'
+  cleared: '{prefix}&#C9A24ASe han archivado y limpiado &#F1E7CC{count} pagos &#C9A24Apor un total de &#F1E7CC{amount}&#C9A24A, sin entregar dinero.'
+  invalid-lines: '{prefix}&#C93A3FAtención: hay {count} líneas dañadas o no reconocidas en transactions.log.'
+  invalid-log: '{prefix}&#C93A3FNo se puede cobrar mientras transactions.log contenga líneas dañadas o importes inválidos.'
+  collect-players-only: '{prefix}&#C93A3FCollect debe ejecutarlo un jugador para poder recibir el dinero.'
+  economy-failure: '{prefix}&#C93A3FEl proveedor económico rechazó el ingreso. No se ha limpiado ningún registro.'
+  storage-failure: '{prefix}&#C93A3FNo se pudieron archivar los pagos. La operación se ha cancelado y no se han perdido registros.'
+  rollback-failure: '{prefix}&#C93A3FSe produjo un fallo crítico al revertir el ingreso. Avisa inmediatamente a un administrador y revisa la consola.'
+  list-title: '&#151A16✦ &#68D878TRANSACCIONES PENDIENTES &#151A16✦'
+  list-summary: '&#F1E7CCPágina &#C9A24A{page}/{pages}  &#F1E7CC•  Total: &#C9A24A{amount}'
+  list-empty: '&#45D6C5No hay pagos pendientes.'
+  list-entry: ' &#C9A24A• #{number} &#45D6C5{player} &#F1E7CCpagó &#68D878{amount}'
+  list-hover: |-
+    &#F1E7CCFecha: &#C9A24A{date}
+    &#F1E7CCUUID: &#45D6C5{uuid}
+    &#F1E7CCUbicación: &#68D878{location}
+  previous: '&#45D6C5« Anterior'
+  previous-disabled: '&8« Anterior'
+  navigation-page: '&#C9A24A   {page}/{pages}   '
+  next: '&#45D6C5Siguiente »'
+  next-disabled: '&8Siguiente »'
+  page-hover: '&#F1E7CCIr a la página {page}'

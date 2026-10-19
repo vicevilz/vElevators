@@ -1,0 +1,840 @@
+menu_title: ' &#151A16✦ &#C9A24A&lVERWALTUNGSVERLAUF &#151A16✦'
+size: 54
+update_interval: 1
+open_commands:
+  - '[sound] ITEM_BOOK_PAGE_TURN 1.0 1.0'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  header_accent:
+    material: YELLOW_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  footer_accent:
+    material: YELLOW_STAINED_GLASS_PANE
+    slots:
+      - 46-48
+      - 50-52
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 4
+    priority: 1
+    enchantment_glint_override: true
+    display_name: '&#C9A24APrüfung und Transaktionen'
+    lore:
+      - '&8ⓘ Permanenter globaler Datensatz'
+      - ''
+      - ' &#F1E7CCSeite &#68D878%velevators_admin_page%&#F1E7CC/&#68D878%velevators_admin_pages%'
+      - ' &#F1E7CCZeitzone: &#45D6C5Europe/Madrid'
+      - ''
+      - ' &#202721Enthält archivierte Käufe, collect und clear.'
+
+  audit_00:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 9
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_0_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_0_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_0_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_0_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_0_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_0_exists%'
+          output: 'yes'
+
+  audit_01:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 10
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_1_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_1_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_1_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_1_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_1_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_1_exists%'
+          output: 'yes'
+
+  audit_02:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_2_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_2_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_2_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_2_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_2_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_2_exists%'
+          output: 'yes'
+
+  audit_03:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 12
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_3_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_3_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_3_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_3_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_3_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_3_exists%'
+          output: 'yes'
+
+  audit_04:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_4_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_4_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_4_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_4_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_4_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_4_exists%'
+          output: 'yes'
+
+  audit_05:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 14
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_5_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_5_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_5_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_5_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_5_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_5_exists%'
+          output: 'yes'
+
+  audit_06:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_6_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_6_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_6_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_6_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_6_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_6_exists%'
+          output: 'yes'
+
+  audit_07:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 16
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_7_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_7_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_7_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_7_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_7_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_7_exists%'
+          output: 'yes'
+
+  audit_08:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 17
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_8_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_8_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_8_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_8_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_8_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_8_exists%'
+          output: 'yes'
+
+  audit_09:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 18
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_9_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_9_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_9_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_9_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_9_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_9_exists%'
+          output: 'yes'
+
+  audit_10:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 19
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_10_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_10_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_10_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_10_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_10_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_10_exists%'
+          output: 'yes'
+
+  audit_11:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 20
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_11_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_11_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_11_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_11_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_11_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_11_exists%'
+          output: 'yes'
+
+  audit_12:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 21
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_12_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_12_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_12_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_12_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_12_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_12_exists%'
+          output: 'yes'
+
+  audit_13:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 22
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_13_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_13_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_13_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_13_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_13_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_13_exists%'
+          output: 'yes'
+
+  audit_14:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 23
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_14_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_14_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_14_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_14_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_14_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_14_exists%'
+          output: 'yes'
+
+  audit_15:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 24
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_15_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_15_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_15_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_15_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_15_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_15_exists%'
+          output: 'yes'
+
+  audit_16:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 25
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_16_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_16_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_16_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_16_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_16_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_16_exists%'
+          output: 'yes'
+
+  audit_17:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 26
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_17_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_17_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_17_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_17_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_17_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_17_exists%'
+          output: 'yes'
+
+  audit_18:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 27
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_18_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_18_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_18_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_18_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_18_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_18_exists%'
+          output: 'yes'
+
+  audit_19:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 28
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_19_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_19_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_19_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_19_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_19_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_19_exists%'
+          output: 'yes'
+
+  audit_20:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 29
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_20_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_20_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_20_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_20_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_20_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_20_exists%'
+          output: 'yes'
+
+  audit_21:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 30
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_21_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_21_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_21_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_21_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_21_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_21_exists%'
+          output: 'yes'
+
+  audit_22:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 31
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_22_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_22_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_22_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_22_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_22_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_22_exists%'
+          output: 'yes'
+
+  audit_23:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 32
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_23_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_23_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_23_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_23_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_23_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_23_exists%'
+          output: 'yes'
+
+  audit_24:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 33
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_24_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_24_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_24_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_24_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_24_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_24_exists%'
+          output: 'yes'
+
+  audit_25:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 34
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_25_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_25_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_25_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_25_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_25_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_25_exists%'
+          output: 'yes'
+
+  audit_26:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 35
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_26_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_26_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_26_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_26_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_26_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_26_exists%'
+          output: 'yes'
+
+  audit_27:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 36
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_27_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_27_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_27_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_27_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_27_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_27_exists%'
+          output: 'yes'
+
+  audit_28:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 37
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_28_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_28_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_28_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_28_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_28_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_28_exists%'
+          output: 'yes'
+
+  audit_29:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 38
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_29_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_29_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_29_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_29_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_29_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_29_exists%'
+          output: 'yes'
+
+  audit_30:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 39
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_30_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_30_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_30_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_30_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_30_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_30_exists%'
+          output: 'yes'
+
+  audit_31:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 40
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_31_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_31_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_31_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_31_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_31_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_31_exists%'
+          output: 'yes'
+
+  audit_32:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 41
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_32_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_32_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_32_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_32_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_32_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_32_exists%'
+          output: 'yes'
+
+  audit_33:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 42
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_33_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_33_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_33_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_33_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_33_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_33_exists%'
+          output: 'yes'
+
+  audit_34:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 43
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_34_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_34_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_34_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_34_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_34_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_34_exists%'
+          output: 'yes'
+
+  audit_35:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 44
+    priority: 1
+    update: true
+    display_name: '&#C9A24A%velevators_audit_35_action%'
+    lore:
+      - '&8ⓘ Verwaltungsdatensatz'
+      - ''
+      - ' &#F1E7CCSchauspieler: &#45D6C5%velevators_audit_35_actor%'
+      - ' &#F1E7CCNetzwerk-ID: &#68D878%velevators_audit_35_network%'
+      - ' &#F1E7CCDatum: &#C9A24A%velevators_audit_35_date% Europe/Madrid'
+      - ''
+      - ' &#202721%velevators_audit_35_details%'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_audit_35_exists%'
+          output: 'yes'
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 45
+    priority: 1
+    display_name: '&#45D6C5Vorherige Seite'
+    view_requirement:
+      requirements:
+        previous:
+          type: string equals
+          input: '%velevators_admin_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminhistorypage -1'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 49
+    priority: 1
+    display_name: '&#C9A24AZurück zur Suchmaschine'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminback'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 53
+    priority: 1
+    display_name: '&#45D6C5Nächste Seite'
+    view_requirement:
+      requirements:
+        next:
+          type: string equals
+          input: '%velevators_admin_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminhistorypage 1'

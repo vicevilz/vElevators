@@ -1,0 +1,1030 @@
+menu_title: '    &#151A16✦ &#C93A3F&lÜYEYİ SİL &#151A16✦'
+size: 54
+update_interval: 1
+
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 0.9'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    display_name: ' '
+    hide-tooltip: true
+
+  frame:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+      - 45-46
+      - 48
+      - 50
+      - 52
+    priority: 50
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 4
+    priority: 1
+    display_name: '&#C93A3FAğ üyeleri'
+    lore:
+      - '&8ⓘ Üye Seçici'
+      - ''
+      - ' &#F1E7CCKayıtlı üyeler: &#C93A3F%velevators_network_member_count%'
+      - ' &#F1E7CCSayfa: &#C9A24A%velevators_member_page%&#F1E7CC/&#C9A24A%velevators_member_pages%'
+      - ''
+      - ' &#202721Kayıtlı tüm üyeler görüntülenir,'
+      - ' &#202721bağlı veya bağlantısı kesilmiş.'
+
+  empty:
+    material: 'texture-4e4b8b8d2362c864e062301487d94d3272a6b570afbf80c2c5b148c954579d46'
+    slot: 22
+    priority: 1
+    display_name: '&#C93A3FÜye yok'
+    lore:
+      - '&8ⓘ Boş liste'
+      - ''
+      - ' &#F1E7CCBu ağın henüz üyesi yok.'
+      - ''
+      - ' &#202721Bir önceki menüden ekleyebilirsiniz.'
+    view_requirement:
+      requirements:
+        has_no_members:
+          type: string equals
+          input: '%velevators_network_member_count%'
+          output: '0'
+
+  member_00:
+    material: 'texture-%velevators_member_player_0_texture%'
+    slot: 9
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_0_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_0_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_0_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_0_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 0'
+
+  member_01:
+    material: 'texture-%velevators_member_player_1_texture%'
+    slot: 10
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_1_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_1_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_1_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_1_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 1'
+
+  member_02:
+    material: 'texture-%velevators_member_player_2_texture%'
+    slot: 11
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_2_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_2_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_2_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_2_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 2'
+
+  member_03:
+    material: 'texture-%velevators_member_player_3_texture%'
+    slot: 12
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_3_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_3_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_3_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_3_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 3'
+
+  member_04:
+    material: 'texture-%velevators_member_player_4_texture%'
+    slot: 13
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_4_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_4_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_4_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_4_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 4'
+
+  member_05:
+    material: 'texture-%velevators_member_player_5_texture%'
+    slot: 14
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_5_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_5_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_5_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_5_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 5'
+
+  member_06:
+    material: 'texture-%velevators_member_player_6_texture%'
+    slot: 15
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_6_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_6_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_6_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_6_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 6'
+
+  member_07:
+    material: 'texture-%velevators_member_player_7_texture%'
+    slot: 16
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_7_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_7_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_7_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_7_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 7'
+
+  member_08:
+    material: 'texture-%velevators_member_player_8_texture%'
+    slot: 17
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_8_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_8_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_8_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_8_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 8'
+
+  member_09:
+    material: 'texture-%velevators_member_player_9_texture%'
+    slot: 18
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_9_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_9_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_9_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_9_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 9'
+
+  member_10:
+    material: 'texture-%velevators_member_player_10_texture%'
+    slot: 19
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_10_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_10_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_10_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_10_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 10'
+
+  member_11:
+    material: 'texture-%velevators_member_player_11_texture%'
+    slot: 20
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_11_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_11_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_11_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_11_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 11'
+
+  member_12:
+    material: 'texture-%velevators_member_player_12_texture%'
+    slot: 21
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_12_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_12_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_12_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_12_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 12'
+
+  member_13:
+    material: 'texture-%velevators_member_player_13_texture%'
+    slot: 22
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_13_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_13_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_13_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_13_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 13'
+
+  member_14:
+    material: 'texture-%velevators_member_player_14_texture%'
+    slot: 23
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_14_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_14_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_14_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_14_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 14'
+
+  member_15:
+    material: 'texture-%velevators_member_player_15_texture%'
+    slot: 24
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_15_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_15_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_15_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_15_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 15'
+
+  member_16:
+    material: 'texture-%velevators_member_player_16_texture%'
+    slot: 25
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_16_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_16_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_16_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_16_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 16'
+
+  member_17:
+    material: 'texture-%velevators_member_player_17_texture%'
+    slot: 26
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_17_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_17_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_17_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_17_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 17'
+
+  member_18:
+    material: 'texture-%velevators_member_player_18_texture%'
+    slot: 27
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_18_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_18_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_18_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_18_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 18'
+
+  member_19:
+    material: 'texture-%velevators_member_player_19_texture%'
+    slot: 28
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_19_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_19_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_19_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_19_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 19'
+
+  member_20:
+    material: 'texture-%velevators_member_player_20_texture%'
+    slot: 29
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_20_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_20_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_20_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_20_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 20'
+
+  member_21:
+    material: 'texture-%velevators_member_player_21_texture%'
+    slot: 30
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_21_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_21_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_21_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_21_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 21'
+
+  member_22:
+    material: 'texture-%velevators_member_player_22_texture%'
+    slot: 31
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_22_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_22_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_22_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_22_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 22'
+
+  member_23:
+    material: 'texture-%velevators_member_player_23_texture%'
+    slot: 32
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_23_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_23_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_23_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_23_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 23'
+
+  member_24:
+    material: 'texture-%velevators_member_player_24_texture%'
+    slot: 33
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_24_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_24_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_24_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_24_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 24'
+
+  member_25:
+    material: 'texture-%velevators_member_player_25_texture%'
+    slot: 34
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_25_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_25_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_25_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_25_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 25'
+
+  member_26:
+    material: 'texture-%velevators_member_player_26_texture%'
+    slot: 35
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_26_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_26_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_26_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_26_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 26'
+
+  member_27:
+    material: 'texture-%velevators_member_player_27_texture%'
+    slot: 36
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_27_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_27_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_27_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_27_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 27'
+
+  member_28:
+    material: 'texture-%velevators_member_player_28_texture%'
+    slot: 37
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_28_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_28_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_28_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_28_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 28'
+
+  member_29:
+    material: 'texture-%velevators_member_player_29_texture%'
+    slot: 38
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_29_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_29_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_29_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_29_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 29'
+
+  member_30:
+    material: 'texture-%velevators_member_player_30_texture%'
+    slot: 39
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_30_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_30_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_30_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_30_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 30'
+
+  member_31:
+    material: 'texture-%velevators_member_player_31_texture%'
+    slot: 40
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_31_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_31_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_31_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_31_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 31'
+
+  member_32:
+    material: 'texture-%velevators_member_player_32_texture%'
+    slot: 41
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_32_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_32_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_32_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_32_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 32'
+
+  member_33:
+    material: 'texture-%velevators_member_player_33_texture%'
+    slot: 42
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_33_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_33_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_33_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_33_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 33'
+
+  member_34:
+    material: 'texture-%velevators_member_player_34_texture%'
+    slot: 43
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_34_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_34_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_34_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_34_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 34'
+
+  member_35:
+    material: 'texture-%velevators_member_player_35_texture%'
+    slot: 44
+    priority: 1
+    display_name: '&#C93A3F%velevators_member_player_35_name%'
+    lore:
+      - '&8ⓘ Ağ üyesi'
+      - ''
+      - ' &#F1E7CCDurum: &#C9A24A%velevators_member_player_35_connection%'
+      - ''
+      - ' &#C93A3F▸ Silmek için tıklayın'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_35_exists%'
+          output: 'yes'
+        is_member:
+          type: string equals
+          input: '%velevators_member_player_35_member%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.9'
+      - '[player] velevatorsaction memberselect 35'
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 47
+    priority: 1
+    display_name: '&#C9A24AÖnceki sayfa'
+    lore:
+      - '&8ⓘ Navigasyon'
+      - ''
+      - ' &#F1E7CCGeçerli sayfa: &#C9A24A%velevators_member_page%&#F1E7CC/&#C9A24A%velevators_member_pages%'
+      - ''
+      - ' &#C9A24A◂ Geri dönmek için tıklayın'
+    view_requirement:
+      requirements:
+        has_previous:
+          type: string equals
+          input: '%velevators_member_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.7 0.9'
+      - '[player] velevatorsaction memberpage -1'
+
+  summary:
+    material: 'texture-4e4b8b8d2362c864e062301487d94d3272a6b570afbf80c2c5b148c954579d46'
+    slot: 49
+    priority: 1
+    display_name: '&#C93A3FKayıtlı üyeler'
+    lore:
+      - '&8ⓘ Ağ Özeti'
+      - ''
+      - ' &#F1E7CCToplam: &#C93A3F%velevators_network_member_count%'
+      - ''
+      - ' &#202721Silinecek bir kafa seçin'
+      - ' &#202721oturum açmış olsun ya da olmasın üyeye.'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 51
+    priority: 1
+    display_name: '&#C9A24ASonraki sayfa'
+    lore:
+      - '&8ⓘ Navigasyon'
+      - ''
+      - ' &#F1E7CCGeçerli sayfa: &#C9A24A%velevators_member_page%&#F1E7CC/&#C9A24A%velevators_member_pages%'
+      - ''
+      - ' &#C9A24A▸ İlerlemek için tıklayın'
+    view_requirement:
+      requirements:
+        has_next:
+          type: string equals
+          input: '%velevators_member_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.7 1.1'
+      - '[player] velevatorsaction memberpage 1'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 53
+    priority: 1
+    display_name: '&#C93A3FGeri'
+    lore:
+      - '&8ⓘ Navigasyon'
+      - ''
+      - ' &#F1E7CCSeviye yönetimine geri dön.'
+      - ''
+      - ' &#C93A3F◂ Geri dönmek için tıklayın'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.8'
+      - '[player] velevatorsaction memberback'

@@ -1,0 +1,517 @@
+menu_title: '     &#151A16✦ &#45D6C5&lICONA RETE &#151A16✦'
+size: 54
+open_commands:
+  - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  header_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  footer_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 45-48
+      - 50-53
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-8122a503d7a6f57802b03af7624194a4c4f5077a99ae21dd276ce7db88bc38ae'
+    slot: 4
+    priority: 1
+    display_name: '&#C9A24AScegli un''icona'
+    lore:
+      - '&8ⓘ Personalizzazione della rete'
+      - ''
+      - ' &#F1E7CCSono disponibili 36 icone.'
+
+  icon_00:
+    material: ENDER_CHEST
+    slot: 9
+    priority: 1
+    display_name: '&#F1E7CCENDER_CHEST'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon ENDER_CHEST'
+
+  icon_01:
+    material: BEACON
+    slot: 10
+    priority: 1
+    display_name: '&#F1E7CCBEACON'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon BEACON'
+
+  icon_02:
+    material: QUARTZ_BLOCK
+    slot: 11
+    priority: 1
+    display_name: '&#F1E7CCQUARZO_BLOCCO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon QUARTZ_BLOCK'
+
+  icon_03:
+    material: EMERALD_BLOCK
+    slot: 12
+    priority: 1
+    display_name: '&#F1E7CCEMERALD_BLOCK'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon EMERALD_BLOCK'
+
+  icon_04:
+    material: REDSTONE_BLOCK
+    slot: 13
+    priority: 1
+    display_name: '&#F1E7CCREDSTONE_BLOCK'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon REDSTONE_BLOCK'
+
+  icon_05:
+    material: DIAMOND_BLOCK
+    slot: 14
+    priority: 1
+    display_name: '&#F1E7CCDIAMOND_BLOCK'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon DIAMOND_BLOCK'
+
+  icon_06:
+    material: GOLD_BLOCK
+    slot: 15
+    priority: 1
+    display_name: '&#F1E7CCGOLD_BLOCK'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon GOLD_BLOCK'
+
+  icon_07:
+    material: AMETHYST_BLOCK
+    slot: 16
+    priority: 1
+    display_name: '&#F1E7CCAMETISTA_BLOCCO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon AMETHYST_BLOCK'
+
+  icon_08:
+    material: CHEST
+    slot: 17
+    priority: 1
+    display_name: '&#F1E7CCPETTO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon CHEST'
+
+  icon_09:
+    material: BARREL
+    slot: 18
+    priority: 1
+    display_name: '&#F1E7CCCANNA'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon BARREL'
+
+  icon_10:
+    material: CRAFTING_TABLE
+    slot: 19
+    priority: 1
+    display_name: '&#F1E7CCTABELLA_CRAFTING'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon CRAFTING_TABLE'
+
+  icon_11:
+    material: FURNACE
+    slot: 20
+    priority: 1
+    display_name: '&#F1E7CCFORNO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon FURNACE'
+
+  icon_12:
+    material: HOPPER
+    slot: 21
+    priority: 1
+    display_name: '&#F1E7CCTRAMOGGIA'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon HOPPER'
+
+  icon_13:
+    material: SPAWNER
+    slot: 22
+    priority: 1
+    display_name: '&#F1E7CCSPAWNER'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon SPAWNER'
+
+  icon_14:
+    material: OAK_DOOR
+    slot: 23
+    priority: 1
+    display_name: '&#F1E7CCROVERE_PORTA'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon OAK_DOOR'
+
+  icon_15:
+    material: IRON_DOOR
+    slot: 24
+    priority: 1
+    display_name: '&#F1E7CCPORTA_FERRO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon IRON_DOOR'
+
+  icon_16:
+    material: COMPASS
+    slot: 25
+    priority: 1
+    display_name: '&#F1E7CCCOMPASS'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon COMPASS'
+
+  icon_17:
+    material: RECOVERY_COMPASS
+    slot: 26
+    priority: 1
+    display_name: '&#F1E7CCRECOVERY_COMPASS'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon RECOVERY_COMPASS'
+
+  icon_18:
+    material: CLOCK
+    slot: 27
+    priority: 1
+    display_name: '&#F1E7CCOROLOGIO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon CLOCK'
+
+  icon_19:
+    material: FILLED_MAP
+    slot: 28
+    priority: 1
+    display_name: '&#F1E7CCFILLED_MAP'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon FILLED_MAP'
+
+  icon_20:
+    material: NETHER_STAR
+    slot: 29
+    priority: 1
+    display_name: '&#F1E7CCNETHER_STAR'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon NETHER_STAR'
+
+  icon_21:
+    material: DIAMOND
+    slot: 30
+    priority: 1
+    display_name: '&#F1E7CCDIAMANTE'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon DIAMOND'
+
+  icon_22:
+    material: EMERALD
+    slot: 31
+    priority: 1
+    display_name: '&#F1E7CCEMERALD'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon EMERALD'
+
+  icon_23:
+    material: AMETHYST_SHARD
+    slot: 32
+    priority: 1
+    display_name: '&#F1E7CCAMETISTA_FREMUTO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon AMETHYST_SHARD'
+
+  icon_24:
+    material: BOOK
+    slot: 33
+    priority: 1
+    display_name: '&#F1E7CCLIBRO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon BOOK'
+
+  icon_25:
+    material: BELL
+    slot: 34
+    priority: 1
+    display_name: '&#F1E7CCcampana'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon BELL'
+
+  icon_26:
+    material: SEA_LANTERN
+    slot: 35
+    priority: 1
+    display_name: '&#F1E7CCLANTERNA_MARE'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon SEA_LANTERN'
+
+  icon_27:
+    material: GLOWSTONE
+    slot: 36
+    priority: 1
+    display_name: '&#F1E7CCGLOWSTONE'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon GLOWSTONE'
+
+  icon_28:
+    material: OBSERVER
+    slot: 37
+    priority: 1
+    display_name: '&#F1E7CCOSSERVATORE'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon OBSERVER'
+
+  icon_29:
+    material: TARGET
+    slot: 38
+    priority: 1
+    display_name: '&#F1E7CCTARGET'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon TARGET'
+
+  icon_30:
+    material: RAIL
+    slot: 39
+    priority: 1
+    display_name: '&#F1E7CCRAIL'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon RAIL'
+
+  icon_31:
+    material: MINECART
+    slot: 40
+    priority: 1
+    display_name: '&#F1E7CCMINECART'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon MINECART'
+
+  icon_32:
+    material: END_CRYSTAL
+    slot: 41
+    priority: 1
+    display_name: '&#F1E7CCEND_CRISTALLO'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon END_CRYSTAL'
+
+  icon_33:
+    material: LODESTONE
+    slot: 42
+    priority: 1
+    display_name: '&#F1E7CCLODESTONE'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon LODESTONE'
+
+  icon_34:
+    material: HEART_OF_THE_SEA
+    slot: 43
+    priority: 1
+    display_name: '&#F1E7CCCUORE_DEL_MARE'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon HEART_OF_THE_SEA'
+
+  icon_35:
+    material: DRAGON_EGG
+    slot: 44
+    priority: 1
+    display_name: '&#F1E7CCDRAGON_EGG'
+    lore:
+      - '&8ⓘ Icona disponibile'
+      - ''
+      - ' &#68D878➜ Fare clic per selezionare'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setnetworkicon DRAGON_EGG'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 49
+    priority: 1
+    display_name: '&#C9A24ARitorno senza cambio'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction manageback'

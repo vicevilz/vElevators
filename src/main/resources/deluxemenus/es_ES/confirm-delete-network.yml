@@ -1,0 +1,74 @@
+menu_title: '       &#151A16✦ &#C93A3F&lELIMINAR &#9B242A&lRED &#151A16✦'
+size: 27
+open_commands:
+  - '[sound] ENTITY_WITHER_HURT'
+
+items:
+  lime_background:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 9-12
+      - 18-21
+    priority: 100
+    hide-tooltip: true
+
+  center_background:
+    material: WHITE_STAINED_GLASS_PANE
+    slots:
+      - 4
+      - 13
+      - 22
+    priority: 100
+    hide-tooltip: true
+
+  red_background:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 5-8
+      - 14-17
+      - 23-26
+    priority: 100
+    hide-tooltip: true
+
+  confirm:
+    material: 'texture-a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756'
+    slot: 11
+    priority: 1
+    display_name: '&#C93A3FEliminar definitivamente'
+    lore:
+      - '&8ⓘ Acción irreversible'
+      - ''
+      - ' &#F1E7CCSe eliminarán todos los pisos registrados.'
+      - ' &#F1E7CCNo se devolverá ningún importe.'
+      - ' &#F1E7CCLos bloques físicos permanecerán.'
+      - ''
+      - ' &#C93A3F➜ Clic para eliminar'
+    left_click_commands:
+      - '[sound] ENTITY_GENERIC_EXPLODE'
+      - '[player] velevatorsaction confirmdeletenetwork'
+
+  information:
+    material: 'placeholder-%velevators_network_icon%'
+    slot: 13
+    priority: 1
+    enchantment_glint_override: true
+    display_name: '&#F1E7CC%velevators_network_name%'
+    lore:
+      - '&8ⓘ Red seleccionada'
+      - ''
+      - ' &#F1E7CCPropietario: &#C93A3F%velevators_network_owner%'
+      - ' &#F1E7CCPisos: &#45D6C5%velevators_network_floors%'
+
+  cancel:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 15
+    priority: 1
+    display_name: '&#68D878Conservar la red'
+    lore:
+      - '&8ⓘ Cancelar eliminación'
+      - ''
+      - ' &#68D878➜ Clic para volver'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction canceldeletenetwork'

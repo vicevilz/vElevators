@@ -1,0 +1,70 @@
+name: vElevators
+version: '${version}'
+main: net.velevators.VElevatorsPlugin
+api-version: '1.21'
+author: Vicevil
+description: Paid, configurable and DeluxeMenus-powered elevators.
+depend: [DeluxeMenus, PlaceholderAPI, LuckPerms, Vault]
+
+commands:
+  velevatorsaction:
+    description: Internal session-bound action.
+
+permissions:
+  velevators.*:
+    description: Full access to vElevators.
+    default: false
+    children:
+      velevators.use: true
+      velevators.create: true
+      velevators.manage: true
+      velevators.manage.others: true
+      velevators.bypass.cost: true
+      velevators.reload: true
+      velevators.adminlog: true
+      velevators.admin.transactions.*: true
+      velevators.bypass.access: true
+  velevators.use:
+    description: Opens the main menu and allows elevator travel.
+    default: false
+  velevators.create:
+    description: Allows registering new paid floors.
+    default: false
+  velevators.manage:
+    description: Allows managing owned and member networks.
+    default: false
+  velevators.manage.others:
+    description: Allows managing other owners' networks and bypassing block protection.
+    default: false
+  velevators.bypass.cost:
+    description: Creates floors without charging their price.
+    default: false
+  velevators.reload:
+    description: Reloads configuration, language and menus.
+    default: false
+  velevators.adminlog:
+    description: Opens global network administration and audit history.
+    default: false
+  velevators.admin.transactions.*:
+    description: Full access to transaction administration.
+    default: false
+    children:
+      velevators.admin.transactions.list: true
+      velevators.admin.transactions.collect: true
+      velevators.admin.transactions.total: true
+      velevators.admin.transactions.clear: true
+  velevators.admin.transactions.list:
+    description: Lists pending payments from transactions.log.
+    default: false
+  velevators.admin.transactions.collect:
+    description: Collects and archives pending payments.
+    default: false
+  velevators.admin.transactions.total:
+    description: Shows the pending payment total.
+    default: false
+  velevators.admin.transactions.clear:
+    description: Archives and clears pending payments without collecting them.
+    default: false
+  velevators.bypass.access:
+    description: Bypasses network and floor access restrictions.
+    default: false

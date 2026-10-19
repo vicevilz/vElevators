@@ -1,0 +1,517 @@
+menu_title: '      &#151A16✦ &#45D6C5&lレベルアイコン &#151A16✦'
+size: 54
+open_commands:
+  - '[sound] ITEM_ARMOR_EQUIP_LEATHER'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  header_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  footer_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 45-48
+      - 50-53
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-8122a503d7a6f57802b03af7624194a4c4f5077a99ae21dd276ce7db88bc38ae'
+    slot: 4
+    priority: 1
+    display_name: '&#C9A24Aアイコンを選択してください'
+    lore:
+      - '&8ⓘ レベルのカスタマイズ'
+      - ''
+      - ' &#F1E7CC利用可能なアイコンは 36 個あります。'
+
+  icon_00:
+    material: ENDER_CHEST
+    slot: 9
+    priority: 1
+    display_name: '&#F1E7CCENDER_CHEST'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon ENDER_CHEST'
+
+  icon_01:
+    material: BEACON
+    slot: 10
+    priority: 1
+    display_name: '&#F1E7CCビーコン'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon BEACON'
+
+  icon_02:
+    material: QUARTZ_BLOCK
+    slot: 11
+    priority: 1
+    display_name: '&#F1E7CCQUARTZ_BLOCK'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon QUARTZ_BLOCK'
+
+  icon_03:
+    material: EMERALD_BLOCK
+    slot: 12
+    priority: 1
+    display_name: '&#F1E7CCEMERALD_BLOCK'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon EMERALD_BLOCK'
+
+  icon_04:
+    material: REDSTONE_BLOCK
+    slot: 13
+    priority: 1
+    display_name: '&#F1E7CCレッドストーン_ブロック'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon REDSTONE_BLOCK'
+
+  icon_05:
+    material: DIAMOND_BLOCK
+    slot: 14
+    priority: 1
+    display_name: '&#F1E7CCDIAMOND_BLOCK'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon DIAMOND_BLOCK'
+
+  icon_06:
+    material: GOLD_BLOCK
+    slot: 15
+    priority: 1
+    display_name: '&#F1E7CCゴールド_ブロック'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon GOLD_BLOCK'
+
+  icon_07:
+    material: AMETHYST_BLOCK
+    slot: 16
+    priority: 1
+    display_name: '&#F1E7CCアメジスト_ブロック'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon AMETHYST_BLOCK'
+
+  icon_08:
+    material: CHEST
+    slot: 17
+    priority: 1
+    display_name: '&#F1E7CC胸'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon CHEST'
+
+  icon_09:
+    material: BARREL
+    slot: 18
+    priority: 1
+    display_name: '&#F1E7CCバレル'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon BARREL'
+
+  icon_10:
+    material: CRAFTING_TABLE
+    slot: 19
+    priority: 1
+    display_name: '&#F1E7CCCRAFTING_TABLE'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon CRAFTING_TABLE'
+
+  icon_11:
+    material: FURNACE
+    slot: 20
+    priority: 1
+    display_name: '&#F1E7CC炉'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon FURNACE'
+
+  icon_12:
+    material: HOPPER
+    slot: 21
+    priority: 1
+    display_name: '&#F1E7CCホッパー'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon HOPPER'
+
+  icon_13:
+    material: SPAWNER
+    slot: 22
+    priority: 1
+    display_name: '&#F1E7CCSPAWNER'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon SPAWNER'
+
+  icon_14:
+    material: OAK_DOOR
+    slot: 23
+    priority: 1
+    display_name: '&#F1E7CCOAK_DOOR'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon OAK_DOOR'
+
+  icon_15:
+    material: IRON_DOOR
+    slot: 24
+    priority: 1
+    display_name: '&#F1E7CCアイアンドア'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon IRON_DOOR'
+
+  icon_16:
+    material: COMPASS
+    slot: 25
+    priority: 1
+    display_name: '&#F1E7CCコンパス'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon COMPASS'
+
+  icon_17:
+    material: RECOVERY_COMPASS
+    slot: 26
+    priority: 1
+    display_name: '&#F1E7CCリカバリ_コンパス'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon RECOVERY_COMPASS'
+
+  icon_18:
+    material: CLOCK
+    slot: 27
+    priority: 1
+    display_name: '&#F1E7CC時計'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon CLOCK'
+
+  icon_19:
+    material: FILLED_MAP
+    slot: 28
+    priority: 1
+    display_name: '&#F1E7CCFILLED_MAP'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon FILLED_MAP'
+
+  icon_20:
+    material: NETHER_STAR
+    slot: 29
+    priority: 1
+    display_name: '&#F1E7CCNETHER_STAR'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon NETHER_STAR'
+
+  icon_21:
+    material: DIAMOND
+    slot: 30
+    priority: 1
+    display_name: '&#F1E7CCダイヤモンド'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon DIAMOND'
+
+  icon_22:
+    material: EMERALD
+    slot: 31
+    priority: 1
+    display_name: '&#F1E7CCエメラルド'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon EMERALD'
+
+  icon_23:
+    material: AMETHYST_SHARD
+    slot: 32
+    priority: 1
+    display_name: '&#F1E7CCアメジスト_シャード'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon AMETHYST_SHARD'
+
+  icon_24:
+    material: BOOK
+    slot: 33
+    priority: 1
+    display_name: '&#F1E7CCBOOK'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon BOOK'
+
+  icon_25:
+    material: BELL
+    slot: 34
+    priority: 1
+    display_name: '&#F1E7CCベル'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon BELL'
+
+  icon_26:
+    material: SEA_LANTERN
+    slot: 35
+    priority: 1
+    display_name: '&#F1E7CCSEA_LANTERN'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon SEA_LANTERN'
+
+  icon_27:
+    material: GLOWSTONE
+    slot: 36
+    priority: 1
+    display_name: '&#F1E7CCグローストーン'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon GLOWSTONE'
+
+  icon_28:
+    material: OBSERVER
+    slot: 37
+    priority: 1
+    display_name: '&#F1E7CCオブザーバー'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon OBSERVER'
+
+  icon_29:
+    material: TARGET
+    slot: 38
+    priority: 1
+    display_name: '&#F1E7CCTARGET'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon TARGET'
+
+  icon_30:
+    material: RAIL
+    slot: 39
+    priority: 1
+    display_name: '&#F1E7CCRAIL'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon RAIL'
+
+  icon_31:
+    material: MINECART
+    slot: 40
+    priority: 1
+    display_name: '&#F1E7CCマインカート'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon MINECART'
+
+  icon_32:
+    material: END_CRYSTAL
+    slot: 41
+    priority: 1
+    display_name: '&#F1E7CCEND_CRYSTAL'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon END_CRYSTAL'
+
+  icon_33:
+    material: LODESTONE
+    slot: 42
+    priority: 1
+    display_name: '&#F1E7CCロードストーン'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon LODESTONE'
+
+  icon_34:
+    material: HEART_OF_THE_SEA
+    slot: 43
+    priority: 1
+    display_name: '&#F1E7CCHEART_OF_THE_SEA'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon HEART_OF_THE_SEA'
+
+  icon_35:
+    material: DRAGON_EGG
+    slot: 44
+    priority: 1
+    display_name: '&#F1E7CCDRAGON_EGG'
+    lore:
+      - '&8ⓘ アイコンが利用可能'
+      - ''
+      - ' &#68D878➜ クリックして選択してください'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[player] velevatorsaction setflooricon DRAGON_EGG'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 49
+    priority: 1
+    display_name: '&#C9A24A変更せずに戻る'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction manageback'

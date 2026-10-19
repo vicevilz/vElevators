@@ -1,0 +1,67 @@
+# Language file loaded from plugins/vElevators/lang/.
+locale: en_US
+
+# Command aliases are registered on server startup. Restart after changing this list.
+command:
+  aliases:
+    - elevator
+    - elevators
+    - elev
+
+elevator:
+  # Required top block for new floors. REDSTONE_BLOCK is not valid here.
+  block: QUARTZ_BLOCK
+
+economy:
+  creation-price: 10000.0
+
+naming:
+  max-length: 20
+  network-max-length: 32
+
+interaction:
+  selection-timeout-seconds: 60
+  rename-timeout-seconds: 60
+  member-timeout-seconds: 60
+  teleport-cooldown-millis: 1000
+  destination-safety: true
+
+menus:
+  # Installs missing localized files without overwriting customizations.
+  # DeluxeMenus registers only the 15 menus for the locale selected above.
+  auto-install: true
+
+sounds:
+  success: ENTITY_PLAYER_LEVELUP
+  error: BLOCK_NOTE_BLOCK_BASS
+  # Kept as a fallback for older configurations.
+  teleport: ENTITY_ENDERMAN_TELEPORT
+  travel-up:
+    sound: BLOCK_NOTE_BLOCK_CHIME
+    volume: 1.0
+    pitch: 1.15
+  travel-down:
+    sound: BLOCK_NOTE_BLOCK_BASS
+    volume: 1.0
+    pitch: 0.85
+  arrival:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    volume: 1.0
+    pitch: 1.0
+  access-denied:
+    sound: BLOCK_IRON_DOOR_CLOSE
+    volume: 1.0
+    pitch: 0.8
+
+effects:
+  action-bar:
+    enabled: true
+    text: '&#68D878You have arrived at &#F1E7CC{floor}'
+  particles:
+    enabled: true
+    up: CLOUD
+    down: REVERSE_PORTAL
+    arrival: END_ROD
+    count: 18
+    offset: 0.35
+    speed: 0.05

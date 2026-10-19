@@ -1,0 +1,92 @@
+menu_title: '  &#151A16✦ &#68D878&lKONFIRMASI &#39A857&lPENCIPTAAN &#151A16✦'
+size: 27
+
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.1'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-26
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  lime_panel:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 9-10
+      - 12
+      - 18-21
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  red_panel:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 5-8
+      - 14
+      - 16-17
+      - 23-26
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  white_panel:
+    material: WHITE_STAINED_GLASS_PANE
+    slots:
+      - 4
+      - 22
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  information:
+    material: QUARTZ_BLOCK
+    slot: 13
+    priority: 1
+    enchantments:
+      - 'DURABILITY;1'
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&#F1E7CC&lTINGKAT BARU'
+    lore:
+      - '&8ⓘ Informasi tingkat baru'
+      - ''
+      - ' &#F1E7CCDunia: &#68D878%velevators_pending_world%'
+      - ' &#F1E7CCKoordinat: &#68D878%velevators_pending_x% %velevators_pending_y% %velevators_pending_z%'
+      - ' &#F1E7CCHarga: &#C9A24A%velevators_price%'
+      - ''
+      - ' &#C93A3F⚠ Penghapusan di masa mendatang tidak akan mengembalikan harga.'
+
+  confirm:
+    material: 'texture-a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756'
+    slot: 11
+    priority: 1
+    display_name: '&#68D878&lKonfirmasi pembuatan'
+    lore:
+      - ''
+      - ' &#F1E7CCHarga akan dihapus dari saldo Anda.'
+      - ''
+      - ' &#68D878▸ Klik untuk membuat level'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP 0.7 1.2'
+      - '[close]'
+      - '[player] velevatorsaction confirmcreate'
+
+  cancel:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 15
+    priority: 1
+    display_name: '&#C93A3F&lBatalkan pembuatan'
+    lore:
+      - ''
+      - ' &#F1E7CCTidak ada uang yang akan ditarik.'
+      - ''
+      - ' &#C93A3F▸ Klik untuk kembali'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.95'
+      - '[player] velevatorsaction cancelcreate'

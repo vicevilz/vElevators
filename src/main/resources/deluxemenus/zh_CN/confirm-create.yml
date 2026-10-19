@@ -1,0 +1,92 @@
+menu_title: '  &#151A16✦ &#68D878&l确认 &#39A857&l创建 &#151A16✦'
+size: 27
+
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.1'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-26
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  lime_panel:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 9-10
+      - 12
+      - 18-21
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  red_panel:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 5-8
+      - 14
+      - 16-17
+      - 23-26
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  white_panel:
+    material: WHITE_STAINED_GLASS_PANE
+    slots:
+      - 4
+      - 22
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  information:
+    material: QUARTZ_BLOCK
+    slot: 13
+    priority: 1
+    enchantments:
+      - 'DURABILITY;1'
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&#F1E7CC&l新级别'
+    lore:
+      - '&8ⓘ 新关卡信息'
+      - ''
+      - ' &#F1E7CC世界：&#68D878%velevators_pending_world%'
+      - ' &#F1E7CC 坐标： &#68D878%velevators_pending_x% %velevators_pending_y% %velevators_pending_z%'
+      - ' &#F1E7CC价格：&#C9A24A%velevators_price%'
+      - ''
+      - ' &#C93A3F⚠ 未来移除不予退还价格。'
+
+  confirm:
+    material: 'texture-a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756'
+    slot: 11
+    priority: 1
+    display_name: '&#68D878&l确认创建'
+    lore:
+      - ''
+      - ' &#F1E7CC 价格将从您的余额中删除。'
+      - ''
+      - ' &#68D878▸ 单击以创建关卡'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP 0.7 1.2'
+      - '[close]'
+      - '[player] velevatorsaction confirmcreate'
+
+  cancel:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 15
+    priority: 1
+    display_name: '&#C93A3F&l取消创建'
+    lore:
+      - ''
+      - ' &#F1E7CC不会提取任何资金。'
+      - ''
+      - ' &#C93A3F▸ 点击返回'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.95'
+      - '[player] velevatorsaction cancelcreate'

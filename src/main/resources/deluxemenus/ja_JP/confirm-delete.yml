@@ -1,0 +1,86 @@
+menu_title: '       &#151A16✦ &#C93A3F&l削除 &#9B242A&lフロア &#151A16✦'
+size: 27
+
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 0.9'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-26
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  lime_panel:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 9-10
+      - 12
+      - 18-21
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  red_panel:
+    material: RED_STAINED_GLASS_PANE
+    slots:
+      - 5-8
+      - 14
+      - 16-17
+      - 23-26
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  white_panel:
+    material: WHITE_STAINED_GLASS_PANE
+    slots:
+      - 4
+      - 22
+    priority: 1
+    display_name: ' '
+    hide_tooltip: true
+
+  information:
+    material: QUARTZ_BLOCK
+    slot: 13
+    priority: 1
+    enchantments:
+      - 'DURABILITY;1'
+    item_flags:
+      - HIDE_ENCHANTS
+    display_name: '&#F1E7CC&l%velevators_selected_floor_name%'
+    lore:
+      - ''
+      - ' &#C93A3F⚠ このアクションによりレベルが非アクティブになります。'
+      - ' &#F1E7CCクォーツとレッドストーンは残ります。'
+      - ' &#C9A24A支払われた価格は返金されません。'
+      - ''
+      - ' &#C93A3F削除は永久的です。'
+
+  confirm:
+    material: 'texture-a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756'
+    slot: 11
+    priority: 1
+    display_name: '&#68D878完全に削除'
+    lore:
+      - ''
+      - ' &#68D878▸ クリックして確認'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_BASS 0.7 0.8'
+      - '[player] velevatorsaction confirmdelete'
+
+  cancel:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 15
+    priority: 1
+    display_name: '&#C93A3F水平を保つ'
+    lore:
+      - ''
+      - ' &#C93A3F▸ クリックして削除せずに戻ります'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.15'
+      - '[player] velevatorsaction canceldelete'

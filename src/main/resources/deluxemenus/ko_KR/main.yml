@@ -1,0 +1,163 @@
+menu_title: '        &#151A16✦ &#39A857&l엘리베이터 &#151A16✦'
+size: 45
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.15'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  accent_corners:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 36
+      - 44
+    priority: 90
+    display_name: ' '
+    hide_tooltip: true
+
+  structure:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4ZWU2ZWRmYTk4ZGI1ZWFlOWI5Yzk5MzZlOTQ0ODliMmQ0YmJiZDNkMmI0YjZiNDg4NWEzMjI0MDYxM2MifX19
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#FF4C4C필수 구조'
+    lore:
+      - '&8ⓘ 레벨 생성 방법'
+      - ''
+      - ' &#F1E7CC상단 블록: &#68D878%velevators_elevator_block%'
+      - ' &#F1E7CC필수 기본: &#C93A3FREDSTONE_BLOCK'
+      - ''
+      - ' &#F1E7CC두 블록을 같은 곳에 배치하세요'
+      - ' &#F1E7CC좌표 X 및 Z.'
+      - ''
+      - ' &#202721구조가 아직 활성화되지 않습니다.'
+      - ' &#202721이 메뉴에서 등록할 때까지.'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  create:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc3YmI2NmZjNzNhOTdjZWZjYjNhNGJmZGNjYjEyMjgxZjQ0ZGQzMjZjY2QwZmYzOWQ0N2U5ODViZmVmZjM0MyJ9fX0=
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#53EA91레벨 추가'
+    lore:
+      - '&8✦ 새로운 역'
+      - ''
+      - ' &#F1E7CC레벨당 가격: &#C9A24A%velevators_price%€'
+      - ' &#F1E7CC각 키는 별도로 지불됩니다.'
+      - ''
+      - ' &#FCD22A⏏ 구조를 선택하려면 클릭하세요.'
+    left_click_commands:
+      - '[sound] BLOCK_BEACON_ACTIVATE'
+      - '[close]'
+      - '[player] velevatorsaction select'
+
+  statistics:
+    material: head-%player_name%
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#45D6C5귀&#41D8BA하&#3CDAB0의 &#38DDA5정&#34DF9A보'
+    lore:
+      - '&8✦ 개인 요약'
+      - ''
+      - ' &#F1E7CC등록된 네트워크: &#68D878%velevators_player_networks%'
+      - ''
+      - ' &#68D878당신의 머리는 당신의 프로필을 나타냅니다'
+      - ' &#202721엘리베이터 시스템 내.'
+      - ''
+      - ' &#202721마우스 오른쪽 버튼을 클릭하여 네트워크를 관리하세요'
+      - ' &#202721모든 수준에서.'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+
+  network_status:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZiNzFlNzllZDVlOWRiYzUwNWY0N2RlMzQ0ZWFkZDk1ODg5NzNhZGU5Y2FiNzc2M2M0YTU5ZjgyMTMwZDMifX19
+    slot: 22
+    priority: 1
+    display_name: '&#6AD79E연결된 네트워크'
+    lore:
+      - '&8✦ 자동 시스템'
+      - ''
+      - ' &#F1E7CC같은 소유자의 레벨,'
+      - ' &#F1E7CC월드, X 및 Z는 자동으로 연결됩니다.'
+      - ''
+      - ' &#68D878인위적인 제한은 없습니다'
+      - ' &#68D878동일한 네트워크의 레벨.'
+      - ''
+      - ' &#202721각 높이는 고유한 이름을 유지합니다.'
+      - ' &#202721및 자체 위치.'
+
+  linking:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 29
+    priority: 1
+    display_name: '&#7C83FD자동 페어링'
+    lore:
+      - '&8✦ 높이 간 연결'
+      - ''
+      - ' &#F1E7CC동일 소유자'
+      - ' &#F1E7CC같은 세계'
+      - ' &#F1E7CC동일한 좌표 X 및 Z'
+      - ''
+      - ' &#68D878➜ 레벨이 스스로 연결됩니다.'
+    left_click_commands:
+      - '[sound] BLOCK_CHAIN_PLACE'
+
+  controls:
+    material: 'texture-105a2cab8b68ea57e3af992a36e47c8ff9aa87cc8776281966f8c3cf31a38'
+    slot: 31
+    priority: 1
+    display_name: '&#79B8FF여행 통제 장치'
+    lore:
+      - '&8✦ 레벨 간 이동'
+      - ''
+      - ' &#68D878건너뛰기 &#F1E7CC→ 다음 레벨로 이동'
+      - ' &#C9A24A웅크리기 &#F1E7CC→ 이전으로 이동'
+      - ''
+      - ' &#F1E7CC대상에는 다음이 있어야 합니다.'
+      - ' &#F1E7CC두 개의 횡단 가능한 블록.'
+      - ''
+      - ' &#202721여행은 방향을 유지합니다.'
+
+  help:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=
+    slot: 33
+    priority: 1
+    display_name: '&#F6C85F빠른 도움말'
+    lore:
+      - '&8✦ 작동'
+      - ''
+      - ' &#F1E7CC1. 구조 준비'
+      - ' &#F1E7CC2. 이 메뉴에서 레벨을 추가하세요'
+      - ' &#F1E7CC3. 결제 확인'
+      - ' &#F1E7CC4. 점프하거나 몸을 숙여 여행하세요'
+      - ''
+      - ' &#68D878이름은 사용자 정의할 수 있습니다.'
+      - ' &#68D878관리 메뉴에서.'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+
+  close:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&#FF4C4C닫기'
+    lore:
+      - '&8✦ 종료 패널'
+      - ''
+      - ' &#FCD22A⏏ 닫으려면 클릭하세요.'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'

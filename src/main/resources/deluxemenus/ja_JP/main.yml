@@ -1,0 +1,163 @@
+menu_title: '        &#151A16✦ &#39A857&lエレベーター &#151A16✦'
+size: 45
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.15'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  accent_corners:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 36
+      - 44
+    priority: 90
+    display_name: ' '
+    hide_tooltip: true
+
+  structure:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4ZWU2ZWRmYTk4ZGI1ZWFlOWI5Yzk5MzZlOTQ0ODliMmQ0YmJiZDNkMmI0YjZiNDg4NWEzMjI0MDYxM2MifX19
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#FF4C4C必要な構造'
+    lore:
+      - '&8ⓘ レベルの作成方法'
+      - ''
+      - ' &#F1E7CC最上位ブロック: &#68D878%velevators_elevator_block%'
+      - ' &#F1E7CC必須ベース: &#C93A3FREDSTONE_BLOCK'
+      - ''
+      - ' &#F1E7CC両方のブロックを同じ上に配置します'
+      - ' &#F1E7CC は X と Z を調整します。'
+      - ''
+      - ' &#202721この構造はまだアクティブになりません'
+      - ' &#202721このメニューから登録するまで。'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  create:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc3YmI2NmZjNzNhOTdjZWZjYjNhNGJmZGNjYjEyMjgxZjQ0ZGQzMjZjY2QwZmYzOWQ0N2U5ODViZmVmZjM0MyJ9fX0=
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#53EA91レベルを追加'
+    lore:
+      - '&8✦ 新しい駅'
+      - ''
+      - ' &#F1E7CCレベルごとの価格: &#C9A24A%velevators_price%€'
+      - ' &#F1E7CC各高さは個別に支払われます。'
+      - ''
+      - ' &#FCD22A⏏ クリックして構造を選択します'
+    left_click_commands:
+      - '[sound] BLOCK_BEACON_ACTIVATE'
+      - '[close]'
+      - '[player] velevatorsaction select'
+
+  statistics:
+    material: head-%player_name%
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#45D6C5あ&#42D8BCな&#3EDAB4た&#3BDBABの&#37DDA3情&#34DF9A報'
+    lore:
+      - '&8✦ 個人的な概要'
+      - ''
+      - ' &#F1E7CC登録されたネットワーク: &#68D878%velevators_player_networks%'
+      - ''
+      - ' &#68D878あなたの頭はあなたのプロフィールを表します'
+      - ' &#202721エレベーター システム内。'
+      - ''
+      - ' &#202721右クリックしてネットワークを管理する'
+      - ' &#202721そのレベルのいずれかで。'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+
+  network_status:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZiNzFlNzllZDVlOWRiYzUwNWY0N2RlMzQ0ZWFkZDk1ODg5NzNhZGU5Y2FiNzc2M2M0YTU5ZjgyMTMwZDMifX19
+    slot: 22
+    priority: 1
+    display_name: '&#6AD79Eリンクされたネットワーク'
+    lore:
+      - '&8✦ 自動システム'
+      - ''
+      - ' &#F1E7CC同じ所有者のレベル、'
+      - ' &#F1E7CCワールド、X、および Z は自動的に接続します。'
+      - ''
+      - ' &#68D878人為的な制限はありません'
+      - ' &#68D878同じネットワーク上のレベル。'
+      - ''
+      - ' &#202721各高さには独自の名前が保持されます'
+      - ' &#202721 とその独自の場所。'
+
+  linking:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 29
+    priority: 1
+    display_name: '&#7C83FD自動ペアリング'
+    lore:
+      - '&8✦ 高さ間の接続'
+      - ''
+      - ' &#F1E7CC同じ所有者'
+      - ' &#F1E7CC同じ世界'
+      - ' &#F1E7CC同じ座標 X と Z'
+      - ''
+      - ' &#68D878➜ レベルは自動的に接続されます'
+    left_click_commands:
+      - '[sound] BLOCK_CHAIN_PLACE'
+
+  controls:
+    material: 'texture-105a2cab8b68ea57e3af992a36e47c8ff9aa87cc8776281966f8c3cf31a38'
+    slot: 31
+    priority: 1
+    display_name: '&#79B8FFトラベルコントロール'
+    lore:
+      - '&8✦ レベル間の移動'
+      - ''
+      - ' &#68D878スキップ &#F1E7CC→ 次のレベルに進みます'
+      - ' &#C9A24Aしゃがむ &#F1E7CC→ 前に戻る'
+      - ''
+      - ' &#F1E7CC宛先には次のものが必要です'
+      - ' &#F1E7CC2 つの通過可能なブロック。'
+      - ''
+      - ' &#202721旅はあなたの方向性を保ちます。'
+
+  help:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=
+    slot: 33
+    priority: 1
+    display_name: '&#F6C85Fクイック ヘルプ'
+    lore:
+      - '&8✦ 操作'
+      - ''
+      - ' &#F1E7CC1。構造を準備する'
+      - ' &#F1E7CC2。このメニューからレベルを追加します'
+      - ' &#F1E7CC3。支払いを確認する'
+      - ' &#F1E7CC4。ジャンプしたりしゃがんだりして移動します'
+      - ''
+      - ' &#68D878名前はカスタマイズ可能'
+      - ' &#68D878管理メニューから。'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+
+  close:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&#FF4C4C閉じる'
+    lore:
+      - '&8✦ 終了パネル'
+      - ''
+      - ' &#FCD22A⏏ クリックして閉じます'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'

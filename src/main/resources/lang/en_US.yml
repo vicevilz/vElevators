@@ -1,0 +1,133 @@
+prefix: '&#39A857&lvElevators &8» &r'
+
+access-modes:
+  public: 'Public'
+  private: 'Private'
+  owner-only: 'Owner only'
+
+errors:
+  no-permission: '{prefix}&#C93A3FYou do not have permission to do that.'
+  players-only: '{prefix}&#C93A3FThis command can only be used by a player.'
+  usage: '{prefix}&#F1E7CCUsage: &f/velevators&7, &f/velevators reload&7, &f/velevators adminlog &7or &f/velevators transactions'
+  session-expired: '{prefix}&#C93A3FThis action has expired. Open the menu again.'
+  database: '{prefix}&#C93A3FThe operation could not be completed. The error has been logged.'
+  menu-open: '{prefix}&#C93A3FDeluxeMenus could not open this menu.'
+  network-not-found: '{prefix}&#C93A3FThis elevator network no longer exists.'
+  floor-not-found: '{prefix}&#C93A3FThis floor no longer exists.'
+  not-owner: '{prefix}&#C93A3FOnly the owner or a member can manage this network.'
+  owner-only: '{prefix}&#C93A3FOnly the owner or an administrator can change this setting.'
+
+creation:
+  select: '{prefix}&#F1E7CCRight-click the top block of the structure. &7You have {seconds} seconds.'
+  selection-timeout: '{prefix}&#C9A24AThe time to select a structure has expired.'
+  invalid-structure: '{prefix}&#C93A3FInvalid structure: the configured block must be directly above a redstone block.'
+  already-registered: '{prefix}&#C93A3FThis location already belongs to an elevator.'
+  insufficient-funds: '{prefix}&#C93A3FYou need {price} to create this floor.'
+  economy-failure: '{prefix}&#C93A3FThe economy provider rejected the payment.'
+  success: '{prefix}&#68D878Floor created successfully. &7Amount paid: &#C9A24A{price}&7.'
+  cancelled: '{prefix}&#C9A24AFloor creation cancelled.'
+
+rename:
+  prompt: '{prefix}&#F1E7CCType the new name in chat &7(maximum {limit} characters, &f/cancel&7 to exit)&f.'
+  invalid: '{prefix}&#C93A3FThe name must contain visible text.'
+  invalid-color: '{prefix}&#C93A3FFloor names cannot contain color codes.'
+  too-long: '{prefix}&#C93A3FThe name exceeds the {limit}-character limit.'
+  success: '{prefix}&#68D878Floor renamed to &#F1E7CC{name}&#68D878.'
+  cancelled: '{prefix}&#C9A24AName change cancelled.'
+  timeout: '{prefix}&#C9A24AThe time to enter a name has expired.'
+
+deletion:
+  success: '{prefix}&#68D878Floor removed. &7The physical blocks remain and the price was not refunded.'
+  cancelled: '{prefix}&#C9A24AFloor removal cancelled.'
+
+members:
+  add-prompt: '{prefix}&#F1E7CCType the player name to add &7(&f/cancel&7 to exit)&f. You have &#C9A24A{seconds} seconds&f.'
+  remove-prompt: '{prefix}&#F1E7CCType the member name to remove &7(&f/cancel&7 to exit)&f. You have &#C9A24A{seconds} seconds&f.'
+  invalid-name: '{prefix}&#C93A3FEnter a valid Minecraft name containing 3 to 16 characters.'
+  player-not-found: '{prefix}&#C93A3FNo player named &#F1E7CC{player} &#C93A3Fwas found.'
+  player-went-offline: '{prefix}&#C9A24A{player} disconnected. The list has been updated.'
+  owner-not-member: '{prefix}&#C93A3FThe owner has permanent access and is not part of the member list.'
+  already-member: '{prefix}&#C9A24A{player} is already a member of this network.'
+  not-member: '{prefix}&#C93A3F{player} is not a member of this network.'
+  added: '{prefix}&#68D878Added &#F1E7CC{player} &#68D878as a network member.'
+  removed: '{prefix}&#68D878Removed &#F1E7CC{player} &#68D878from the network members.'
+  cancelled: '{prefix}&#C9A24AMember management cancelled.'
+  timeout: '{prefix}&#C9A24AThe time to enter the player name has expired.'
+
+network:
+  locked: '{prefix}&#C93A3FPrivate network. &7Only the owner and members can use it.'
+  unlocked: '{prefix}&#68D878Public network. &7Any player with permission can use it.'
+  rename-prompt: '{prefix}&#F1E7CCType the new network name &7(maximum {limit} characters, &f/cancel&7 to exit)&f.'
+  rename-invalid: '{prefix}&#C93A3FThe network name must be visible, contain no colors and respect the {limit}-character limit.'
+  rename-success: '{prefix}&#68D878The network is now named &#F1E7CC{name}&#68D878.'
+  rename-timeout: '{prefix}&#C9A24AThe time to rename the network has expired.'
+  access-updated: '{prefix}&#68D878Network access mode: &#F1E7CC{mode}&#68D878.'
+  floor-access-updated: '{prefix}&#68D878Access for &#F1E7CC{floor}&#68D878: &#F1E7CC{mode}&#68D878.'
+  delete-success: '{prefix}&#68D878Network completely removed. &7The physical blocks remain and no money was refunded.'
+  delete-cancelled: '{prefix}&#C9A24AYou kept the network.'
+
+icons:
+  invalid: '{prefix}&#C93A3FThe selected icon is not in the allowed catalog.'
+  network-updated: '{prefix}&#68D878Network icon changed to &#F1E7CC{icon}&#68D878.'
+  floor-updated: '{prefix}&#68D878Floor icon changed to &#F1E7CC{icon}&#68D878.'
+
+transfer:
+  success: '{prefix}&#68D878Network transferred to &#F1E7CC{player}&#68D878. You remain a member.'
+  cancelled: '{prefix}&#C9A24AOwnership transfer cancelled.'
+  invalid-target: '{prefix}&#C93A3FThe selected player is no longer a valid member of this network.'
+  conflict: '{prefix}&#C93A3FTransfer failed: the new owner already has another network at these coordinates.'
+
+admin-search:
+  owner-prompt: '{prefix}&#F1E7CCType the exact owner name. &7You have {seconds} seconds and can use &f/cancel&7.'
+  world-prompt: '{prefix}&#F1E7CCType the exact world name. &7You have {seconds} seconds and can use &f/cancel&7.'
+  coords-prompt: '{prefix}&#F1E7CCType &f<x> <z> &#F1E7CCfor the current world or &f<world> <x> <z>&#F1E7CC. &7You have {seconds} seconds.'
+  invalid: '{prefix}&#C93A3FThe search value is invalid.'
+  invalid-coordinates: '{prefix}&#C93A3FInvalid format. Use &f<x> <z> &cor &f<world> <x> <z>&c.'
+  no-results: '{prefix}&#C9A24ANo networks matched that criterion.'
+  timeout: '{prefix}&#C9A24AThe administrative search timed out.'
+  cancelled: '{prefix}&#C9A24AAdministrative search cancelled.'
+  teleported: '{prefix}&#68D878Teleported to Floor 0 of &#F1E7CC{network}&#68D878.'
+  teleport-failed: '{prefix}&#C93A3FNo active Floor 0 was found for that network.'
+
+travel:
+  no-floor-above: '{prefix}&#C9A24AThere is no floor above.'
+  no-floor-below: '{prefix}&#C9A24AThere is no floor below.'
+  unsafe: '{prefix}&#C93A3FThe destination is obstructed and unsafe.'
+  broken: '{prefix}&#C93A3FThe structure of one of the floors is incomplete.'
+  locked: '{prefix}&#C93A3FThis network is locked. Only the owner and members can use it.'
+  inaccessible: '{prefix}&#C93A3FThere is no accessible floor in that direction.'
+
+protection:
+  registered: '{prefix}&#C93A3FRemove the floor from the management menu first.'
+
+admin:
+  reloaded: '{prefix}&#68D878Configuration, language, aliases and menus reloaded.'
+  reload-failed: '{prefix}&#C93A3FReload failed. Check the console.'
+
+transactions:
+  usage: '{prefix}&#F1E7CCUsage: &f/velevators transactions <list|collect|total|clear> [page]'
+  invalid-page: '{prefix}&#C93A3FThat page does not exist.'
+  empty: '{prefix}&#C9A24AThere are no pending payments in transactions.log.'
+  total: '{prefix}&#F1E7CCThere are &#68D878{count} pending payments &#F1E7CCfor a total of &#C9A24A{amount}&#F1E7CC.'
+  collected: '{prefix}&#C9A24A{amount} &#68D878was added to your account and &#F1E7CC{count} payments &#68D878were archived.'
+  cleared: '{prefix}&#F1E7CC{count} payments &#C9A24Awith a total of &#F1E7CC{amount} &#C9A24Awere archived and cleared without paying money.'
+  invalid-lines: '{prefix}&#C93A3FWarning: transactions.log contains {count} damaged or unrecognized lines.'
+  invalid-log: '{prefix}&#C93A3FCollection is blocked while transactions.log contains damaged lines or invalid amounts.'
+  collect-players-only: '{prefix}&#C93A3FCollect must be run by a player who can receive the money.'
+  economy-failure: '{prefix}&#C93A3FThe economy provider rejected the deposit. No records were cleared.'
+  storage-failure: '{prefix}&#C93A3FPayments could not be archived. The operation was cancelled and no records were lost.'
+  rollback-failure: '{prefix}&#C93A3FA critical error occurred while reversing the deposit. Notify an administrator and check the console immediately.'
+  list-title: '&#151A16✦ &#68D878PENDING TRANSACTIONS &#151A16✦'
+  list-summary: '&#F1E7CCPage &#C9A24A{page}/{pages}  &#F1E7CC•  Total: &#C9A24A{amount}'
+  list-empty: '&#45D6C5There are no pending payments.'
+  list-entry: ' &#C9A24A• #{number} &#45D6C5{player} &#F1E7CCpaid &#68D878{amount}'
+  list-hover: |-
+    &#F1E7CCDate: &#C9A24A{date}
+    &#F1E7CCUUID: &#45D6C5{uuid}
+    &#F1E7CCLocation: &#68D878{location}
+  previous: '&#45D6C5« Previous'
+  previous-disabled: '&8« Previous'
+  navigation-page: '&#C9A24A   {page}/{pages}   '
+  next: '&#45D6C5Next »'
+  next-disabled: '&8Next »'
+  page-hover: '&#F1E7CCGo to page {page}'

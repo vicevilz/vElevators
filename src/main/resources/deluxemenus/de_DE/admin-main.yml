@@ -1,0 +1,862 @@
+menu_title: '   &#151A16✦ &#45D6C5&lVERWALTUNG &#151A16✦'
+size: 54
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_BEACON_ACTIVATE 1.0 1.0'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    hide-tooltip: true
+
+  header_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 3
+      - 5
+      - 7
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  footer_accent:
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+      - 46-52
+    priority: 90
+    display_name: ' '
+    hide-tooltip: true
+
+  search_owner:
+    material: 'texture-82e6cbf4a4efba79477c9484b0b49f3d291c5e7f62af43d9a6908235802ff58c'
+    slot: 0
+    priority: 1
+    display_name: '&#45D6C5Besitzer finden'
+    lore:
+      - '&8ⓘ Globale Suche'
+      - ''
+      - ' &#F1E7CCErmöglicht Ihnen auch die Suche nach Spielern'
+      - ' &#F1E7CCdie nicht verbunden sind.'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie, um den Namen einzugeben'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminsearch owner'
+
+  search_world:
+    material: 'texture-5577c4de1f51a70722023e856b543cd570f1d0ee6b9d167b59028ce1bc92e458'
+    slot: 1
+    priority: 1
+    display_name: '&#68D878Suche nach Welt'
+    lore:
+      - '&8ⓘ Globale Suche'
+      - ''
+      - ' &#68D878➜ Klicken Sie hier, um die Welt zu schreiben'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminsearch world'
+
+  search_coords:
+    material: 'texture-c3ffa9b958aacc2b3979cf63413e6cdd254340552085ff20d60404f50f3cd2c7'
+    slot: 2
+    priority: 1
+    display_name: '&#C9A24ASuche nach Koordinaten'
+    lore:
+      - '&8ⓘ Globale Suche'
+      - ''
+      - ' &#C9A24A➜ Klicken Sie hier, um Welt, X und Z zu schreiben'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminsearch coords'
+
+  information:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 4
+    priority: 1
+    enchantment_glint_override: true
+    display_name: '&#F1E7CCAdministratives Panel'
+    lore:
+      - '&8ⓘ vElevators'
+      - ''
+      - ' &#F1E7CCWählen Sie einen verbundenen Kopf aus'
+      - ' &#F1E7CCo verwenden Sie eine der Suchmaschinen.'
+
+  history:
+    material: 'texture-1054a28c12a131d2eb4a387da55e159e19fc2f894af988de5a76dd5d9650629d'
+    slot: 6
+    priority: 1
+    display_name: '&#C9A24AVerwaltungshistorie'
+    lore:
+      - '&8ⓘ Permanente Prüfung'
+      - ''
+      - ' &#F1E7CCErstellungen, Löschungen, Mitglieder,'
+      - ' &#F1E7CCEigenschaft, Zugänge, Namen und Symbole.'
+      - ' &#F1E7CCArchivierte Zahlungen, collect und clear.'
+      - ''
+      - ' &#C9A24A➜ Klicken Sie zum Öffnen'
+    left_click_commands:
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+      - '[player] velevatorsaction adminhistory'
+
+  close:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 8
+    priority: 1
+    display_name: '&#C93A3FSchließen'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'
+
+  player_00:
+    material: 'texture-%velevators_member_player_0_texture%'
+    slot: 9
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_0_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_0_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 0'
+
+  player_01:
+    material: 'texture-%velevators_member_player_1_texture%'
+    slot: 10
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_1_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_1_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 1'
+
+  player_02:
+    material: 'texture-%velevators_member_player_2_texture%'
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_2_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_2_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 2'
+
+  player_03:
+    material: 'texture-%velevators_member_player_3_texture%'
+    slot: 12
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_3_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_3_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 3'
+
+  player_04:
+    material: 'texture-%velevators_member_player_4_texture%'
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_4_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_4_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 4'
+
+  player_05:
+    material: 'texture-%velevators_member_player_5_texture%'
+    slot: 14
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_5_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_5_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 5'
+
+  player_06:
+    material: 'texture-%velevators_member_player_6_texture%'
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_6_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_6_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 6'
+
+  player_07:
+    material: 'texture-%velevators_member_player_7_texture%'
+    slot: 16
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_7_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_7_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 7'
+
+  player_08:
+    material: 'texture-%velevators_member_player_8_texture%'
+    slot: 17
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_8_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_8_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 8'
+
+  player_09:
+    material: 'texture-%velevators_member_player_9_texture%'
+    slot: 18
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_9_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_9_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 9'
+
+  player_10:
+    material: 'texture-%velevators_member_player_10_texture%'
+    slot: 19
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_10_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_10_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 10'
+
+  player_11:
+    material: 'texture-%velevators_member_player_11_texture%'
+    slot: 20
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_11_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_11_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 11'
+
+  player_12:
+    material: 'texture-%velevators_member_player_12_texture%'
+    slot: 21
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_12_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_12_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 12'
+
+  player_13:
+    material: 'texture-%velevators_member_player_13_texture%'
+    slot: 22
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_13_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_13_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 13'
+
+  player_14:
+    material: 'texture-%velevators_member_player_14_texture%'
+    slot: 23
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_14_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_14_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 14'
+
+  player_15:
+    material: 'texture-%velevators_member_player_15_texture%'
+    slot: 24
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_15_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_15_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 15'
+
+  player_16:
+    material: 'texture-%velevators_member_player_16_texture%'
+    slot: 25
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_16_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_16_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 16'
+
+  player_17:
+    material: 'texture-%velevators_member_player_17_texture%'
+    slot: 26
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_17_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_17_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 17'
+
+  player_18:
+    material: 'texture-%velevators_member_player_18_texture%'
+    slot: 27
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_18_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_18_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 18'
+
+  player_19:
+    material: 'texture-%velevators_member_player_19_texture%'
+    slot: 28
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_19_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_19_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 19'
+
+  player_20:
+    material: 'texture-%velevators_member_player_20_texture%'
+    slot: 29
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_20_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_20_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 20'
+
+  player_21:
+    material: 'texture-%velevators_member_player_21_texture%'
+    slot: 30
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_21_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_21_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 21'
+
+  player_22:
+    material: 'texture-%velevators_member_player_22_texture%'
+    slot: 31
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_22_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_22_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 22'
+
+  player_23:
+    material: 'texture-%velevators_member_player_23_texture%'
+    slot: 32
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_23_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_23_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 23'
+
+  player_24:
+    material: 'texture-%velevators_member_player_24_texture%'
+    slot: 33
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_24_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_24_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 24'
+
+  player_25:
+    material: 'texture-%velevators_member_player_25_texture%'
+    slot: 34
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_25_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_25_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 25'
+
+  player_26:
+    material: 'texture-%velevators_member_player_26_texture%'
+    slot: 35
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_26_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_26_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 26'
+
+  player_27:
+    material: 'texture-%velevators_member_player_27_texture%'
+    slot: 36
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_27_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_27_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 27'
+
+  player_28:
+    material: 'texture-%velevators_member_player_28_texture%'
+    slot: 37
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_28_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_28_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 28'
+
+  player_29:
+    material: 'texture-%velevators_member_player_29_texture%'
+    slot: 38
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_29_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_29_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 29'
+
+  player_30:
+    material: 'texture-%velevators_member_player_30_texture%'
+    slot: 39
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_30_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_30_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 30'
+
+  player_31:
+    material: 'texture-%velevators_member_player_31_texture%'
+    slot: 40
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_31_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_31_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 31'
+
+  player_32:
+    material: 'texture-%velevators_member_player_32_texture%'
+    slot: 41
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_32_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_32_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 32'
+
+  player_33:
+    material: 'texture-%velevators_member_player_33_texture%'
+    slot: 42
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_33_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_33_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 33'
+
+  player_34:
+    material: 'texture-%velevators_member_player_34_texture%'
+    slot: 43
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_34_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_34_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 34'
+
+  player_35:
+    material: 'texture-%velevators_member_player_35_texture%'
+    slot: 44
+    priority: 1
+    update: true
+    display_name: '&#F1E7CC%velevators_member_player_35_name%'
+    lore:
+      - '&8ⓘ Player verbunden'
+      - ''
+      - ' &#45D6C5➜ Klicken Sie hier, um ihre Netzwerke anzuzeigen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_35_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerselect 35'
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 45
+    priority: 1
+    display_name: '&#45D6C5Vorherige Seite'
+    view_requirement:
+      requirements:
+        previous:
+          type: string equals
+          input: '%velevators_member_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerpage -1'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 53
+    priority: 1
+    display_name: '&#45D6C5Nächste Seite'
+    view_requirement:
+      requirements:
+        next:
+          type: string equals
+          input: '%velevators_member_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] velevatorsaction adminplayerpage 1'

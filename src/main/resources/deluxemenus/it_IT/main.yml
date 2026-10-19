@@ -1,0 +1,163 @@
+menu_title: '        &#151A16✦ &#39A857&lASCENSORI &#151A16✦'
+size: 45
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.15'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  accent_corners:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 36
+      - 44
+    priority: 90
+    display_name: ' '
+    hide_tooltip: true
+
+  structure:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4ZWU2ZWRmYTk4ZGI1ZWFlOWI5Yzk5MzZlOTQ0ODliMmQ0YmJiZDNkMmI0YjZiNDg4NWEzMjI0MDYxM2MifX19
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#FF4C4CStruttura richiesta'
+    lore:
+      - '&8ⓘ Come creare un livello'
+      - ''
+      - ' &#F1E7CCBlocco superiore: &#68D878%velevators_elevator_block%'
+      - ' &#F1E7CCBase obbligatoria: &#C93A3FREDSTONE_BLOCK'
+      - ''
+      - ' &#F1E7CCPosiziona entrambi i blocchi sullo stesso'
+      - ' &#F1E7CCcoordinate X e Z.'
+      - ''
+      - ' &#202721La struttura non sarà ancora attiva'
+      - ' &#202721finché non lo registri da questo menu.'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  create:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc3YmI2NmZjNzNhOTdjZWZjYjNhNGJmZGNjYjEyMjgxZjQ0ZGQzMjZjY2QwZmYzOWQ0N2U5ODViZmVmZjM0MyJ9fX0=
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#53EA91Aggiungi un livello'
+    lore:
+      - '&8✦ Nuova stazione'
+      - ''
+      - ' &#F1E7CCPrezzo per livello: &#C9A24A%velevators_price%€'
+      - ' &#F1E7CCOgni altezza viene pagata separatamente.'
+      - ''
+      - ' &#FCD22A⏏ Fare clic per selezionare la struttura'
+    left_click_commands:
+      - '[sound] BLOCK_BEACON_ACTIVATE'
+      - '[close]'
+      - '[player] velevatorsaction select'
+
+  statistics:
+    material: head-%player_name%
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#45D6C5L&#44D7C2e &#43D7C0t&#42D8BDu&#41D8BAe &#40D9B8i&#3FD9B5n&#3EDAB2f&#3CDAB0o&#3BDBADr&#3ADCAAm&#39DCA7a&#38DDA5z&#37DDA2i&#36DE9Fo&#35DE9Dn&#34DF9Ai'
+    lore:
+      - '&8✦ Riepilogo personale'
+      - ''
+      - ' &#F1E7CCReti registrate: &#68D878%velevators_player_networks%'
+      - ''
+      - ' &#68D878La tua testa rappresenta il tuo profilo'
+      - ' &#202721all''interno del sistema ascensore.'
+      - ''
+      - ' &#202721Gestisci una rete facendo clic con il pulsante destro del mouse'
+      - ' &#202721su uno qualsiasi dei suoi livelli.'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+
+  network_status:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZiNzFlNzllZDVlOWRiYzUwNWY0N2RlMzQ0ZWFkZDk1ODg5NzNhZGU5Y2FiNzc2M2M0YTU5ZjgyMTMwZDMifX19
+    slot: 22
+    priority: 1
+    display_name: '&#6AD79EReti collegate'
+    lore:
+      - '&8✦ Sistema automatico'
+      - ''
+      - ' &#F1E7CCI livelli dello stesso proprietario,'
+      - ' &#F1E7CCmondo, X e Z si connettono automaticamente.'
+      - ''
+      - ' &#68D878Non esiste un limite artificiale'
+      - ' &#68D878di livelli sulla stessa rete.'
+      - ''
+      - ' &#202721Ogni altezza mantiene il proprio nome'
+      - ' &#202721e la propria ubicazione.'
+
+  linking:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 29
+    priority: 1
+    display_name: '&#7C83FDAssociazione automatica'
+    lore:
+      - '&8✦ Collegamento tra le altezze'
+      - ''
+      - ' &#F1E7CCStesso proprietario'
+      - ' &#F1E7CCStesso mondo'
+      - ' &#F1E7CCStesse coordinate X e Z'
+      - ''
+      - ' &#68D878➜ I livelli si collegano'
+    left_click_commands:
+      - '[sound] BLOCK_CHAIN_PLACE'
+
+  controls:
+    material: 'texture-105a2cab8b68ea57e3af992a36e47c8ff9aa87cc8776281966f8c3cf31a38'
+    slot: 31
+    priority: 1
+    display_name: '&#79B8FFComandi di viaggio'
+    lore:
+      - '&8✦ Movimento tra i livelli'
+      - ''
+      - ' &#68D878Salta &#F1E7CC→ vai al livello successivo'
+      - ' &#C9A24ACrouch &#F1E7CC→ vai al precedente'
+      - ''
+      - ' &#F1E7CCLa destinazione deve avere'
+      - ' &#F1E7CCdue blocchi attraversabili.'
+      - ''
+      - ' &#202721Il viaggio preserva l''orientamento.'
+
+  help:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=
+    slot: 33
+    priority: 1
+    display_name: '&#F6C85FGuida rapida'
+    lore:
+      - '&8✦ Operazione'
+      - ''
+      - ' &#F1E7CC1. Preparare la struttura'
+      - ' &#F1E7CC2. Aggiungi il livello da questo menu'
+      - ' &#F1E7CC3. Conferma il pagamento'
+      - ' &#F1E7CC4. Salta o accovacciati per viaggiare'
+      - ''
+      - ' &#68D878I nomi possono essere personalizzati'
+      - ' &#68D878dal menù gestione.'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+
+  close:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&#FF4C4CChiudi'
+    lore:
+      - '&8✦ Pannello di uscita'
+      - ''
+      - ' &#FCD22A⏏ Clicca per chiudere'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'

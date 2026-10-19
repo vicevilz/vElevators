@@ -1,0 +1,872 @@
+menu_title: '      &#151A16✦ &#68D878&lLID TOEVOEGEN &#151A16✦'
+size: 54
+update_interval: 1
+
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.2'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    priority: 100
+    display_name: ' '
+    hide-tooltip: true
+
+  frame:
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+      - 0-3
+      - 5-8
+      - 45-46
+      - 48
+      - 50
+      - 52
+    priority: 50
+    display_name: ' '
+    hide-tooltip: true
+
+  information:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 4
+    priority: 1
+    display_name: '&#68D878Verbonden spelers'
+    lore:
+      - '&8ⓘ Ledenkiezer'
+      - ''
+      - ' &#F1E7CCVerbonden spelers: &#68D878%velevators_online_player_count%'
+      - ' &#F1E7CCPagina: &#C9A24A%velevators_member_page%&#F1E7CC/&#C9A24A%velevators_member_pages%'
+      - ''
+      - ' &#202721Elke aangesloten speler wordt weergegeven.'
+      - ' &#202721Uw status verschijnt onder uw naam.'
+
+  member_00:
+    material: 'head-%velevators_member_player_0_name%'
+    slot: 9
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_0_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_0_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_0_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 0'
+
+  member_01:
+    material: 'head-%velevators_member_player_1_name%'
+    slot: 10
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_1_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_1_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_1_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 1'
+
+  member_02:
+    material: 'head-%velevators_member_player_2_name%'
+    slot: 11
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_2_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_2_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_2_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 2'
+
+  member_03:
+    material: 'head-%velevators_member_player_3_name%'
+    slot: 12
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_3_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_3_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_3_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 3'
+
+  member_04:
+    material: 'head-%velevators_member_player_4_name%'
+    slot: 13
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_4_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_4_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_4_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 4'
+
+  member_05:
+    material: 'head-%velevators_member_player_5_name%'
+    slot: 14
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_5_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_5_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_5_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 5'
+
+  member_06:
+    material: 'head-%velevators_member_player_6_name%'
+    slot: 15
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_6_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_6_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_6_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 6'
+
+  member_07:
+    material: 'head-%velevators_member_player_7_name%'
+    slot: 16
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_7_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_7_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_7_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 7'
+
+  member_08:
+    material: 'head-%velevators_member_player_8_name%'
+    slot: 17
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_8_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_8_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_8_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 8'
+
+  member_09:
+    material: 'head-%velevators_member_player_9_name%'
+    slot: 18
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_9_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_9_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_9_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 9'
+
+  member_10:
+    material: 'head-%velevators_member_player_10_name%'
+    slot: 19
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_10_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_10_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_10_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 10'
+
+  member_11:
+    material: 'head-%velevators_member_player_11_name%'
+    slot: 20
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_11_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_11_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_11_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 11'
+
+  member_12:
+    material: 'head-%velevators_member_player_12_name%'
+    slot: 21
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_12_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_12_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_12_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 12'
+
+  member_13:
+    material: 'head-%velevators_member_player_13_name%'
+    slot: 22
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_13_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_13_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_13_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 13'
+
+  member_14:
+    material: 'head-%velevators_member_player_14_name%'
+    slot: 23
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_14_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_14_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_14_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 14'
+
+  member_15:
+    material: 'head-%velevators_member_player_15_name%'
+    slot: 24
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_15_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_15_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_15_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 15'
+
+  member_16:
+    material: 'head-%velevators_member_player_16_name%'
+    slot: 25
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_16_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_16_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_16_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 16'
+
+  member_17:
+    material: 'head-%velevators_member_player_17_name%'
+    slot: 26
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_17_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_17_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_17_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 17'
+
+  member_18:
+    material: 'head-%velevators_member_player_18_name%'
+    slot: 27
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_18_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_18_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_18_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 18'
+
+  member_19:
+    material: 'head-%velevators_member_player_19_name%'
+    slot: 28
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_19_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_19_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_19_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 19'
+
+  member_20:
+    material: 'head-%velevators_member_player_20_name%'
+    slot: 29
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_20_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_20_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_20_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 20'
+
+  member_21:
+    material: 'head-%velevators_member_player_21_name%'
+    slot: 30
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_21_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_21_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_21_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 21'
+
+  member_22:
+    material: 'head-%velevators_member_player_22_name%'
+    slot: 31
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_22_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_22_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_22_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 22'
+
+  member_23:
+    material: 'head-%velevators_member_player_23_name%'
+    slot: 32
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_23_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_23_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_23_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 23'
+
+  member_24:
+    material: 'head-%velevators_member_player_24_name%'
+    slot: 33
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_24_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_24_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_24_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 24'
+
+  member_25:
+    material: 'head-%velevators_member_player_25_name%'
+    slot: 34
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_25_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_25_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_25_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 25'
+
+  member_26:
+    material: 'head-%velevators_member_player_26_name%'
+    slot: 35
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_26_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_26_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_26_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 26'
+
+  member_27:
+    material: 'head-%velevators_member_player_27_name%'
+    slot: 36
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_27_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_27_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_27_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 27'
+
+  member_28:
+    material: 'head-%velevators_member_player_28_name%'
+    slot: 37
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_28_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_28_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_28_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 28'
+
+  member_29:
+    material: 'head-%velevators_member_player_29_name%'
+    slot: 38
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_29_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_29_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_29_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 29'
+
+  member_30:
+    material: 'head-%velevators_member_player_30_name%'
+    slot: 39
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_30_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_30_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_30_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 30'
+
+  member_31:
+    material: 'head-%velevators_member_player_31_name%'
+    slot: 40
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_31_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_31_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_31_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 31'
+
+  member_32:
+    material: 'head-%velevators_member_player_32_name%'
+    slot: 41
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_32_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_32_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_32_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 32'
+
+  member_33:
+    material: 'head-%velevators_member_player_33_name%'
+    slot: 42
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_33_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_33_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_33_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 33'
+
+  member_34:
+    material: 'head-%velevators_member_player_34_name%'
+    slot: 43
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_34_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_34_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_34_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 34'
+
+  member_35:
+    material: 'head-%velevators_member_player_35_name%'
+    slot: 44
+    priority: 1
+    display_name: '&#68D878%velevators_member_player_35_name%'
+    lore:
+      - '&8ⓘ Speler aangesloten'
+      - ''
+      - ' &#F1E7CCStatus: &#C9A24A%velevators_member_player_35_relation%'
+      - ''
+      - ' &#68D878▸ Klik om het toe te voegen'
+    view_requirement:
+      requirements:
+        exists:
+          type: string equals
+          input: '%velevators_member_player_35_exists%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.2'
+      - '[player] velevatorsaction memberselect 35'
+
+  previous_page:
+    material: 'texture-a185c97dbb8353de652698d24b64327b793a3f32a98be67b719fbedab35e'
+    slot: 47
+    priority: 1
+    display_name: '&#C9A24AVorige pagina'
+    lore:
+      - '&8ⓘ Navigatie'
+      - ''
+      - ' &#F1E7CCHuidige pagina: &#C9A24A%velevators_member_page%&#F1E7CC/&#C9A24A%velevators_member_pages%'
+      - ''
+      - ' &#C9A24A◂ Klik om terug te gaan'
+    view_requirement:
+      requirements:
+        has_previous:
+          type: string equals
+          input: '%velevators_member_has_previous_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.7 0.9'
+      - '[player] velevatorsaction memberpage -1'
+
+  manual:
+    material: 'texture-5ff31431d64587ff6ef98c0675810681f8c13bf96f51d9cb07ed7852b2ffd1'
+    slot: 49
+    priority: 1
+    display_name: '&#C9A24AOffline speler toevoegen'
+    lore:
+      - '&8ⓘ Handmatig zoeken'
+      - ''
+      - ' &#F1E7CCGebruik deze optie als de speler'
+      - ' &#F1E7CCdie u zoekt, is niet verbonden.'
+      - ''
+      - ' &#C9A24A▸ Klik om uw naam te schrijven'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 1.0'
+      - '[close]'
+      - '[player] velevatorsaction memberchat'
+
+  next_page:
+    material: 'texture-31c0ededd7115fc1b23d51ce966358b27195daf26ebb6e45a66c34c69c34091'
+    slot: 51
+    priority: 1
+    display_name: '&#C9A24AVolgende pagina'
+    lore:
+      - '&8ⓘ Navigatie'
+      - ''
+      - ' &#F1E7CCHuidige pagina: &#C9A24A%velevators_member_page%&#F1E7CC/&#C9A24A%velevators_member_pages%'
+      - ''
+      - ' &#C9A24A▸ Klik om verder te gaan'
+    view_requirement:
+      requirements:
+        has_next:
+          type: string equals
+          input: '%velevators_member_has_next_page%'
+          output: 'yes'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.7 1.1'
+      - '[player] velevatorsaction memberpage 1'
+
+  back:
+    material: 'texture-beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7'
+    slot: 53
+    priority: 1
+    display_name: '&#C93A3FTerug'
+    lore:
+      - '&8ⓘ Navigatie'
+      - ''
+      - ' &#F1E7CCTerug naar niveaubeheer.'
+      - ''
+      - ' &#C93A3F◂ Klik om terug te keren'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK 0.8 0.8'
+      - '[player] velevatorsaction memberback'

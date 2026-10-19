@@ -1,0 +1,163 @@
+menu_title: '        &#151A16✦ &#39A857&lЛИФТЫ &#151A16✦'
+size: 45
+update_interval: 1
+open_commands:
+  - '[sound] BLOCK_NOTE_BLOCK_CHIME 1.0 1.15'
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    priority: 100
+    display_name: ' '
+    hide_tooltip: true
+
+  accent_corners:
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 36
+      - 44
+    priority: 90
+    display_name: ' '
+    hide_tooltip: true
+
+  structure:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4ZWU2ZWRmYTk4ZGI1ZWFlOWI5Yzk5MzZlOTQ0ODliMmQ0YmJiZDNkMmI0YjZiNDg4NWEzMjI0MDYxM2MifX19
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&#FF4C4CОбязательная структура'
+    lore:
+      - '&8ⓘ Как создать уровень'
+      - ''
+      - ' &#F1E7CCВерхний блок: &#68D878%velevators_elevator_block%'
+      - ' &#F1E7CCОбязательная база: &#C93A3FREDSTONE_BLOCK'
+      - ''
+      - ' &#F1E7CCПоместите оба блока на один и тот же'
+      - ' &#F1E7CCкоординаты X и Z.'
+      - ''
+      - ' &#202721Структура пока не будет активной'
+      - ' &#202721пока вы не зарегистрируете его из этого меню.'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  create:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc3YmI2NmZjNzNhOTdjZWZjYjNhNGJmZGNjYjEyMjgxZjQ0ZGQzMjZjY2QwZmYzOWQ0N2U5ODViZmVmZjM0MyJ9fX0=
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&#53EA91Добавить уровень'
+    lore:
+      - '&8✦ Новая станция'
+      - ''
+      - ' &#F1E7CCЦена за уровень: &#C9A24A%velevators_price%€'
+      - ' &#F1E7CCКаждая высота оплачивается отдельно.'
+      - ''
+      - ' &#FCD22A⏏ Нажмите, чтобы выбрать структуру.'
+    left_click_commands:
+      - '[sound] BLOCK_BEACON_ACTIVATE'
+      - '[close]'
+      - '[player] velevatorsaction select'
+
+  statistics:
+    material: head-%player_name%
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&#45D6C5В&#44D7C2а&#42D7BEш&#41D8BBа &#40D9B8и&#3ED9B4н&#3DDAB1ф&#3CDBAEо&#3BDCABр&#39DCA7м&#38DDA4а&#37DEA1ц&#35DE9Dи&#34DF9Aя'
+    lore:
+      - '&8✦ Личное резюме'
+      - ''
+      - ' &#F1E7CCЗарегистрированные сети: &#68D878%velevators_player_networks%'
+      - ''
+      - ' &#68D878Ваша голова представляет ваш профиль'
+      - ' &#202721в системе лифта.'
+      - ''
+      - ' &#202721Управление сетью щелчком правой кнопки мыши'
+      - ' &#202721на любом из его уровней.'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+
+  network_status:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZiNzFlNzllZDVlOWRiYzUwNWY0N2RlMzQ0ZWFkZDk1ODg5NzNhZGU5Y2FiNzc2M2M0YTU5ZjgyMTMwZDMifX19
+    slot: 22
+    priority: 1
+    display_name: '&#6AD79EСвязанные сети'
+    lore:
+      - '&8✦ Автоматическая система'
+      - ''
+      - ' &#F1E7CCУровни одного владельца,'
+      - ' &#F1E7CCмир, X и Z подключаются автоматически.'
+      - ''
+      - ' &#68D878Искусственного ограничения нет'
+      - ' &#68D878 уровней в одной сети.'
+      - ''
+      - ' &#202721Каждая высота сохраняет свое имя'
+      - ' &#202721 и свое местоположение.'
+
+  linking:
+    material: 'texture-32fa8f38c7b22096619c3a6d6498b405530e48d5d4f91e2aacea578844d5c67'
+    slot: 29
+    priority: 1
+    display_name: '&#7C83FDАвтоматическое сопряжение'
+    lore:
+      - '&8✦ Соединение высот'
+      - ''
+      - ' &#F1E7CCТот же владелец'
+      - ' &#F1E7CCТот же мир'
+      - ' &#F1E7CCОдинаковые координаты X и Z'
+      - ''
+      - ' &#68D878➜ Уровни соединяются сами собой.'
+    left_click_commands:
+      - '[sound] BLOCK_CHAIN_PLACE'
+
+  controls:
+    material: 'texture-105a2cab8b68ea57e3af992a36e47c8ff9aa87cc8776281966f8c3cf31a38'
+    slot: 31
+    priority: 1
+    display_name: '&#79B8FFОрганы управления движением'
+    lore:
+      - '&8✦ Перемещение между уровнями'
+      - ''
+      - ' &#68D878Пропустить &#F1E7CC→ перейти на следующий уровень'
+      - ' &#C9A24AПрисесть &#F1E7CC→ перейти к предыдущему'
+      - ''
+      - ' &#F1E7CCВ пункте назначения должно быть'
+      - ' &#F1E7CCдва проходимых блока.'
+      - ''
+      - ' &#202721Путешествие сохраняет вашу ориентацию.'
+
+  help:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=
+    slot: 33
+    priority: 1
+    display_name: '&#F6C85FКраткая помощь'
+    lore:
+      - '&8✦ Эксплуатация'
+      - ''
+      - ' &#F1E7CC1. Подготовьте структуру'
+      - ' &#F1E7CC2. Добавьте уровень из этого меню'
+      - ' &#F1E7CC3. Подтвердить платеж'
+      - ' &#F1E7CC4. Прыгайте или приседайте, чтобы путешествовать'
+      - ''
+      - ' &#68D878Имена можно настроить'
+      - ' &#68D878 из меню управления.'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+
+  close:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&#FF4C4CЗакрыть'
+    lore:
+      - '&8✦ Панель выхода'
+      - ''
+      - ' &#FCD22A⏏ Нажмите, чтобы закрыть'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+      - '[player] velevatorsaction close'
