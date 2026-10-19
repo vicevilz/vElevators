@@ -24,4 +24,4 @@ Recorded startup/menu-registration checks cover Paper 1.21, 1.21.11 and 26.2 bui
 
 Dynamic names, access/member labels and audit descriptions are still partly Spanish. Translations have not received native-speaker review. See the README for the complete requirements and behavior.
 
-This source publication does not create a GitHub Release automatically.
+Distribution is managed by the author. This repository does not publish downloadable plugin artifacts automatically.

@@ -1,6 +1,5 @@
 # vElevators
 
-[![Build](https://github.com/vicevilz/vElevators/actions/workflows/build.yml/badge.svg)](https://github.com/vicevilz/vElevators/actions/workflows/build.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 
 Paid, configurable elevator floors for Paper, with vertical travel, shared networks, access controls and editable DeluxeMenus interfaces.
@@ -49,7 +48,7 @@ SQLite JDBC is bundled in the plugin JAR. SkinsRestorer and the ParseOther expan
 ## Installation
 
 1. Install the dependencies and configure your economy provider.
-2. Obtain `vElevators-Paper-1.1.0.jar` from a published [Release](https://github.com/vicevilz/vElevators/releases), a successful [Actions build](https://github.com/vicevilz/vElevators/actions/workflows/build.yml), or build it from source below. A source ZIP is not an installable plugin.
+2. Obtain `vElevators-Paper-1.1.0.jar` through the author's authorized distribution channel.
 3. Stop the server, put the JAR in `plugins/` and start the server.
 4. Check the startup log for the vElevators enable message and DeluxeMenus reload result.
 5. Grant the appropriate permissions. All permissions declared by vElevators default to `false`.
@@ -237,28 +236,6 @@ Payment lines use UTF-8 and `dd/MM/yyyy HH:mm Europe/Madrid` timestamps, followe
 Invalid pending lines are reported by the read commands and block collection. `clear` preserves them in the permanent archive with an `UNPARSED` prefix. There is no automatic log rotation.
 
 Creation failures after withdrawal attempt to undo the registration and refund the withdrawal. Collection failures during archiving attempt to withdraw the deposit again. These are compensating operations across Vault, SQLite and files, not a distributed transaction or a guarantee against a process crash. Investigate critical rollback messages and reconcile the economy and logs before retrying an affected operation. Keep backups of the SQLite database, both logs and customized resources.
-
-## Build from source
-
-Install **JDK 21**, make it available through `JAVA_HOME`, then clone this repository:
-
-```bash
-git clone https://github.com/vicevilz/vElevators.git
-cd vElevators
-./gradlew clean check
-```
-
-On Windows PowerShell:
-
-```powershell
-.\gradlew.bat clean check
-```
-
-The checked-in Wrapper selects Gradle 9.6.1 and verifies its distribution checksum. Dependencies are resolved from Maven Central, the Paper repository, ExtendedClip's repository and JitPack. The plugin is built against Paper API `1.21.1-R0.1-SNAPSHOT`, VaultAPI `1.7` and PlaceholderAPI `2.12.3`; SQLite JDBC `3.50.3.0` is included in the resulting JAR. Server plugins and API JARs are not bundled.
-
-Output: `build/libs/vElevators-Paper-1.1.0.jar`. Test reports: `build/reports/tests/test/index.html`. The `check` task runs JUnit tests and depends on the plugin JAR task. Automated checks cover storage, numbering, permissions, sessions, transactions, travel logic and YAML/placeholder parity across the 225 menus; they do not replace live-server/client testing.
-
-The [build workflow](.github/workflows/build.yml) runs Java 21 checks on pushes to `main`, pull requests and manual runs, and uploads the JAR and test reports as Actions artifacts. It does not publish a GitHub Release.
 
 ## Technical structure
 
