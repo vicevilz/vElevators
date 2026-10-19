@@ -11,7 +11,7 @@ vElevators is a paid plugin with publicly inspectable source. Under the
 an authorized purchase, including when using a self-compiled or modified JAR.
 Purchasers may make private modifications for authorized use; redistribution
 requires permission except for the limited contribution/fork permissions in the
-license and rights preserved from earlier or third-party licenses.
+license and applicable third-party licenses.
 
 ## Features
 
@@ -279,12 +279,6 @@ The license requires a purchase for server use, allows private modifications by
 purchasers and limits redistribution. Public source access and the limited
 permission to submit a contribution do not provide a general free-use license.
 These are licensing conditions, not technical copy protection.
-
-**Earlier MIT permissions remain:** the original public revisions were released
-under MIT. This change does not revoke those grants or make the same previously
-licensed material exclusive. The original notice is preserved in
-[licenses/LEGACY-MIT.txt](licenses/LEGACY-MIT.txt). Existing copies and material
-covered by an earlier grant may continue to be used under its terms.
 
 Third-party rights and obligations are preserved; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Compatibility of commercial

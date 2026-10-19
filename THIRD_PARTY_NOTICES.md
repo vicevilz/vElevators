@@ -1,16 +1,9 @@
-# Third-party and earlier licensing notices
+# Third-party licensing notices
 
-The [vElevators license](LICENSE.md) applies to the Author's original work only,
-subject to earlier grants. It does not change the licenses of dependencies,
+The [vElevators license](LICENSE.md) applies to the Author's original work only.
+It does not change the licenses of dependencies,
 tools, APIs or server plugins. This file is an inventory of directly relevant
 components, not a legal clearance or a complete transitive dependency audit.
-
-## Earlier public vElevators revisions
-
-The initial public source commits `fc173213f0c42379157c082bf534f381f546a347` and
-`1b5ebc1a183c56bedfe0e1066e13f6ffc041b8cd` included the MIT License. The complete
-original notice is retained in [licenses/LEGACY-MIT.txt](licenses/LEGACY-MIT.txt).
-Previously granted rights are unaffected by the current commercial terms.
 
 ## Bundled runtime dependency
 

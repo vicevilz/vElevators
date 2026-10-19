@@ -8,7 +8,7 @@ Copyright (c) 2026 Vicevil. All rights reserved, subject to the exceptions below
 
 "Software" means the original vElevators source code, resources, documentation
 and compiled forms that Vicevil publishes under this license. Third-party
-material and copies covered by earlier license grants are subject to Section 7.
+material is subject to Section 7.
 
 "Author" means Vicevil, the copyright holder of the original vElevators work.
 "Purchaser" means the person or entity that has purchased an authorized
@@ -90,18 +90,7 @@ granted by this license are reserved, subject to Section 7 and mandatory law.
 Private modifications must retain the applicable copyright and license notices.
 This license does not grant trademark rights or permission to imply endorsement.
 
-## 7. Earlier MIT grants and third-party rights
-
-Earlier published revisions, including commits
-`fc173213f0c42379157c082bf534f381f546a347` and
-`1b5ebc1a183c56bedfe0e1066e13f6ffc041b8cd`, were distributed under the MIT License.
-Its original text is preserved in [licenses/LEGACY-MIT.txt](licenses/LEGACY-MIT.txt).
-
-This license does not revoke, narrow or retroactively replace rights already
-granted under MIT for those copies and the material covered by those grants.
-Where the same material is available to you under a valid earlier MIT grant,
-that grant remains available. Changing this repository's license or the purchase
-requirement does not make previously MIT-licensed material exclusive.
+## 7. Third-party rights
 
 Third-party components retain their own licenses. This license does not relicense
 them, limit rights they grant, or waive obligations they impose. Applicable

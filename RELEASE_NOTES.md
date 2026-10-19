@@ -34,7 +34,6 @@ self-compiled or modified copies, and restricts redistribution while permitting
 source inspection and limited contribution forks. Purchasers may modify their
 copies privately for authorized use.
 
-This licensing update does not change the plugin's implementation or version
-and does not relicense existing JARs retroactively. Earlier MIT grants and
-third-party rights remain unaffected. Review `LICENSE.md`,
-`licenses/LEGACY-MIT.txt` and `THIRD_PARTY_NOTICES.md` for the scope and limitations.
+This licensing update does not change the plugin's implementation or version.
+Third-party rights remain unaffected. Review `LICENSE.md` and
+`THIRD_PARTY_NOTICES.md` for the scope and limitations.
